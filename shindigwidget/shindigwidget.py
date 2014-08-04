@@ -32,12 +32,19 @@ class ShindigXBlock(XBlock):
         The primary view of the ShindigXBlock, shown to students
         when viewing courses.
         """
-        html = self.resource_string("static/html/shindigwidget.html")
+        if self.is_instructor():
+        	html = self.resource_string("static/html/shindigwidget-editor.html")
+	else:
+		html = self.resource_string("static/html/shindigwidget.html")
+
         frag = Fragment(html.format(self=self))
         frag.add_css(self.resource_string("static/css/shindigwidget.css"))
         frag.add_javascript(self.resource_string("static/js/src/shindigwidget.js"))
         frag.initialize_js('ShindigXBlock')
         return frag
+
+    # TO-DO:  can we also define instructor fragment under studio_view?
+    #def studio_view(self, context=None)
 
     # TO-DO: change this handler to perform your own actions.  You may need more
     # than one handler, or you may not need any handlers at all.
@@ -64,3 +71,8 @@ class ShindigXBlock(XBlock):
                 </vertical_demo>
              """),
         ]
+    
+    @XBlock.handler
+    def is_instructor(self):
+        return self.xmodule_runtime.get_user_role() == 'instructor'
+
