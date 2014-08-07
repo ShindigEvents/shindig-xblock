@@ -64,3 +64,22 @@ class ShindigXBlock(XBlock):
                 </vertical_demo>
              """),
         ]
+
+    @XBlock.handler
+    def is_staff(self):
+	return self.xmodule_runtime.get_user_role() == 'staff'
+
+    def is_instructor(self):
+        return self.xmodule_runtime.get_user_role() == 'instructor'
+
+    def is_student(self):
+        return self.xmodule_runtime.get_user_role() == 'student'
+
+    def is_admin(self):
+	return self.is_staff() or self.is_instructor()
+
+    def get_user_role(self):
+        return self.xmodule_runtime.get_user_role()
+
+    def get_user_id(self):
+        return self.scope_ids.user_id
