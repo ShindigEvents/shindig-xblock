@@ -22,7 +22,7 @@ def package_data(pkg, roots):
 
 setup(
     name='shindigwidget-xblock',
-    version='0.11',
+    version='0.1',
     description='shindigwidget XBlock',   # TODO: write a better description.
     packages=[
         'shindigwidget',

@@ -83,3 +83,6 @@ class ShindigXBlock(XBlock):
 
     def get_user_id(self):
         return self.scope_ids.user_id
+
+    def get_anonymous_user_id(self):
+	return self.xmodule_runtime.anonymous_student_id
