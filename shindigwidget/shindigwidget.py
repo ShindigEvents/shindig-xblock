@@ -32,12 +32,16 @@ class ShindigXBlock(XBlock):
         The primary view of the ShindigXBlock, shown to students
         when viewing courses.
         """
+	hidden_fields = self.get_hidden_fields()
         html = self.resource_string("static/html/shindigwidget.html")
-        frag = Fragment(html.format(self=self))
+        frag = Fragment(html.format(self=self, hidden_fields=hidden_fields))
+	frag.add_javascript("http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js")
+	frag.add_javascript(self.resource_string("static/js/src/modernizr.js"))
+	frag.add_javascript(self.resource_string("static/js/src/detect.js"))
         frag.add_css(self.resource_string("static/css/shindigwidget.css"))
         frag.add_javascript(self.resource_string("static/js/src/shindigwidget.js"))
-        frag.initialize_js('ShindigXBlock')
-        return frag
+	frag.initialize_js('ShindigXBlock')
+	return frag
 
     # TO-DO: change this handler to perform your own actions.  You may need more
     # than one handler, or you may not need any handlers at all.
@@ -66,6 +70,9 @@ class ShindigXBlock(XBlock):
         ]
 
     @XBlock.handler
+    def get_hidden_fields(self):
+	return '<input type=hidden name=user_id value=' + self.get_anonymous_user_id() + ' ><input type=hidden name=user_role value=' + self.get_user_role() + ' >'
+
     def is_staff(self):
 	return self.xmodule_runtime.get_user_role() == 'staff'
 
