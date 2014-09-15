@@ -32,12 +32,9 @@ class ShindigXBlock(XBlock):
         The primary view of the ShindigXBlock, shown to students
         when viewing courses.
         """
-	hidden_fields = self.get_hidden_fields()
         html = self.resource_string("static/html/shindigwidget.html")
-        frag = Fragment(html.format(self=self, hidden_fields=hidden_fields))
-	frag.add_javascript("http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js")
-	frag.add_javascript(self.resource_string("static/js/src/modernizr.js"))
-	frag.add_javascript(self.resource_string("static/js/src/detect.js"))
+        frag = Fragment(html.format(self=self))
+        frag.add_javascript(self.resource_string("static/js/src/modernizr.js"))
         frag.add_css(self.resource_string("static/css/shindigwidget.css"))
         frag.add_javascript(self.resource_string("static/js/src/shindigwidget.js"))
 	frag.initialize_js('ShindigXBlock')
@@ -68,28 +65,3 @@ class ShindigXBlock(XBlock):
                 </vertical_demo>
              """),
         ]
-
-    @XBlock.handler
-    def get_hidden_fields(self):
-	return '<input type=hidden name=user_id value=' + self.get_anonymous_user_id() + ' ><input type=hidden name=user_role value=' + self.get_user_role() + ' >'
-
-    def is_staff(self):
-	return self.xmodule_runtime.get_user_role() == 'staff'
-
-    def is_instructor(self):
-        return self.xmodule_runtime.get_user_role() == 'instructor'
-
-    def is_student(self):
-        return self.xmodule_runtime.get_user_role() == 'student'
-
-    def is_admin(self):
-	return self.is_staff() or self.is_instructor()
-
-    def get_user_role(self):
-        return self.xmodule_runtime.get_user_role()
-
-    def get_user_id(self):
-        return self.scope_ids.user_id
-
-    def get_anonymous_user_id(self):
-	return self.xmodule_runtime.anonymous_student_id
