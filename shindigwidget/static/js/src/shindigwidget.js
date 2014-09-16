@@ -13,7 +13,7 @@ function ShindigXBlock(runtime, element) {
         test : Modernizr.inputtypes && Modernizr.inputtypes.date,
         nope : [
             '//afarkas.github.io/webshim/js-webshim/minified/polyfiller.js',
-            'pollyfills/webshim-overrides.css'
+            'css/webshim-overrides.css'
         ],
         callback: function(){
             if (!window.jQuery) {
