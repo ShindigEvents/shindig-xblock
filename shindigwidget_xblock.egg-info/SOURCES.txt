@@ -1,9 +1,10 @@
 shindigwidget/__init__.py
 shindigwidget/shindigwidget.py
-shindigwidget/static/.DS_Store
 shindigwidget/static/README.txt
 shindigwidget/static/css/shindigwidget.css
 shindigwidget/static/html/shindigwidget.html
+shindigwidget/static/js/src/detect.js
+shindigwidget/static/js/src/modernizr.js
 shindigwidget/static/js/src/shindigwidget.js
 shindigwidget_xblock.egg-info/PKG-INFO
 shindigwidget_xblock.egg-info/SOURCES.txt

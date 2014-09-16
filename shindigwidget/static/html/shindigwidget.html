@@ -1,199 +1,305 @@
 <div class="shindigwidget_block">
 
-    <div id="content">
-    <div class="container">
-        <div class="well">
-            <form id="signup" class="form-horizontal" method="post" action="http://107.23.143.169/insertevent/" autocomplete="on">
-                <!-- Event Type -->
-                <div class="control-group required">
-                    <label class="control-label">Create a new event</label>
-                    <div class="controls">
-                        <div class="input-prepend">
-                            <div class="btn-group" data-toggle="buttons-radio">
-                                <input type="radio" id="eventType1" name="event_type" value="Study Hall" data-toggle="button" checked="checked">
-                                <label class="btn btn-info" for="eventType1" onclick="">Study Hall</label>
+<form id="shindig-signup"
+      class="form-horizontal"
+      method="post"
+      action="//services.shindig.com/insertevent/"
+      target="postTarget"
+      autocomplete="on">
+<div class="tab-container">
+<input type="radio" id="s1" name="s" checked="">
+<input type="radio" id="s2" name="s">
+<input type="radio" id="s3" name="s">
+<div class="tabs">
+    <label for="s1">Info</label>
+    <label for="s2">Create</label>
+    <label for="s3">Events</label>
+</div>
+<ul class="sections">
+<!-- Default Information read from environment -->
+<li>
+    <div class="well">
+        <div class="control-group required">
+            <!-- Instituion -->
+            <label class="control-label">Institution</label>
+            <div class="controls">
+                <div class="input-prepend">
+                    <span class="add-on"><i class="icon-home"></i></span>
+                    <input type="text" class="input-xlarge" id="institution" name="institution" placeholder="Name of Institution" required="required">
+                </div>
+            </div>
+            <!-- Course -->
+            <label class="control-label">Course</label>
+            <div class="controls">
+                <div class="input-prepend">
+                    <span class="add-on"><i class="icon-book"></i></span>
+                    <input type="text" class="input-xlarge" id="course" name="course" placeholder="Course Name" required="required">
+                </div>
+            </div>
+        </div>
+        <!-- Contact Info -->
+        <div class="control-group required">
+            <label class="control-label">Course Admin #</label>
+            <div class="controls">
+                <div class="input-prepend">
+                    <span class="add-on"><i class="icon-headphones"></i></span>
+                    <input type="tel"
+                           class="input-xlarge"
+                           id="customerServicePhone"
+                           name="service_phone"
+                           title="Phone Number Format: (999)999-9999"
+                           placeholder="Enter a contact number"
 
-                                <input type="radio" id="eventType2" name="event_type" value="Office Hours" data-toggle="button">
-                                <label class="btn btn-info" for="eventType2" onclick="">Office Hours</label>
+                           required="required">
+                </div>
+            </div>
+            <!-- Customer Service Email -->
+            <label  title="This email will be used to send event confirmations to the event planner."
+                    class="control-label required">Course Admin Email</label>
+            <div class="controls">
+                <div title="This email will be used to send event confirmations to the event planner."
+                     class="input-prepend">
+                    <span class="add-on"><i class="icon-envelope"></i></span>
+                    <input type="email" class="input-xlarge" id="customerServiceEmail" name="service_email" placeholder="Enter an email address"  required="required">
+                </div>
+            </div>
+        </div>
+        <div class="control-group required">
+            <!-- Time Zone -->
+            <label class="control-label required">Time Zone</label>
+            <div class="controls">
+                <div class="input-prepend">
+                    <span class="add-on"><i class="icon-time"></i></span>
+                    <select name="time_zone" id="timeZone" class="shindigInput inputLabel required valid"  required="required">
+                        <option value="America/New_York" label="Eastern">Eastern</option>
+                        <option value="America/Chicago" label="Central">Central</option>
+                        <option value="America/Denver" label="Mountain">Mountain</option>
+                        <option value="America/Phoenix" label="Arizona">Arizona</option>
+                        <option value="America/Los_Angeles" label="Pacific">Pacific</option>
+                        <option value="America/Anchorage" label="Alaska">Alaska</option>
+                        <option value="Pacific/Honolulu" label="Hawaii">Hawaii</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Country -->
+            <label class="control-label">Country</label>
+            <div class="controls">
+                <div class="input-prepend">
+                    <span class="add-on"><i class="icon-flag"></i></span>
+                    <select name="country" id="country" class="shindigInput inputLabel"  required="required" >
+                        <option value="0" label="United States">United States</option>
+                        <option value="1" label="United Kingdom">United Kingdom</option>
+                        <option value="2" label="UTC">UTC</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- Next Tab -->
+        <div class="control-group">
+            <div class="controls">
+                <label class="btn btn-info pull-right"
+                       for="s2">Next -></label>
+            </div>
+        </div>
 
-                                <input type="radio" id="eventType3" name="event_type" value="Dicussion Section" data-toggle="button">
-                                <label class="btn btn-info" for="eventType3" onclick="">Dicussion Section</label>
-                            </div>
-                        </div>
+        <div>
+            <p>Organize video chat office hours, discussion sections, and study halls for your students within edX. Students can see availability on their dashboard. In these events Instructors can video chat singly or as a group with all, can take questions from any and all students in front of the entire gathering and students themselves can discuss privately with one another.</p>
+
+            <p>
+                Event Types<br/>
+                -Office Hours - Faculty-led Q&A sessions<br/>
+                -Discussion Sections - Teaching Assistant or student led discussions on selected course material<br/>
+                - Study Halls - Unstructured peer to peer teaching, sharing, and review sessions<br/>
+                These  links will help familiarize you with the Shindig large scale video chat teaching platform’s capabilities.
+                <a href="http://youtu.be/ICsNKttfsOE">Introduction to Shindig Video</a><br/>
+            </p>
+            <p>
+                Once you have entered the details below, navigate to the <label for="s2">Create tab</label><br/>
+                <br/>
+                If you have questions about creating or hosting a Shindig event, contact <a href="mailto:edxsupport@shindigevents.com">edxsupport@shindigevents.com</a>
+            </p>
+            <span>Powered by </span><a href="http://www.shindigevents.com/"><img src="//shindigevents.github.io/shindig-xblock/shindigwidget/static/images/shindig_header_logo.png" class="vcenter"></a>
+        </div>
+
+    </div>
+</li>
+<!-- Event specific information -->
+<li>
+    <div class="well">
+        <!-- moved input under well to allow use of sibling selectors to toggle fields -->
+        <input type="radio" id="OneTimeEvent" name="event_frequency" value="One Time Event" data-toggle="button" checked="checked">
+        <!-- Event Type -->
+        <div class="control-group required">
+            <label class="control-label">Create a new event</label>
+            <div class="controls event-type">
+                <div class="input-prepend">
+                    <div class="btn-group" data-toggle="buttons-radio">
+                        <input type="radio" id="eventType2" name="event_type" value="OH" data-toggle="button" checked="checked">
+                        <label class="btn btn-info"
+                               for="eventType2"
+                               title="Instructor or Teaching Assistant led session promising direct input and access for Q&A, advice and support from Instructor"
+                               onclick="">Office Hours</label>
+
+                        <input type="radio" id="eventType3" name="event_type" value="DS" data-toggle="button">
+                        <label class="btn btn-info"
+                               for="eventType3"
+                               title="Instructor, Teaching Assistant or Student administered session ideal for lecture review, test prep, homework review, discussion, debate guided by a leader "
+                               onclick="">Dicussion Section</label>
+
+                        <input type="radio" id="eventType1" name="event_type" value="SH" data-toggle="button" >
+                        <label class="btn btn-info"
+                               for="eventType1"
+                               title="unmoderated sessions encouraging student to student teaching, sharing and discussion"
+                               onclick="">Study Hall</label>
                     </div>
                 </div>
-                <div class="control-group required">
-                    <!-- Instituion -->
-                    <label class="control-label">Institution</label>
-                    <div class="controls">
-                        <div class="input-prepend">
-                            <span class="add-on"><i class="icon-home"></i></span>
-                            <input type="text" class="input-xlarge" id="institution" name="institution" placeholder="Name of Institution" required="required">
-                        </div>
-                    </div>
-                    <!-- Course -->
-                    <label class="control-label">Course</label>
-                    <div class="controls">
-                        <div class="input-prepend">
-                            <span class="add-on"><i class="icon-book"></i></span>
-                            <input type="text" class="input-xlarge" id="course" name="course" placeholder="Course Name" required="required">
-                        </div>
-                    </div>
-                    <!-- Event Name -->
-                    <label class="control-label">Event Name</label>
-                    <div class="controls">
-                        <div class="input-prepend">
-                            <span class="add-on"><i class="icon-user"></i></span>
-                            <input type="text" class="input-xlarge" id="eventname" name="event_name" placeholder="Event Name" required="required">
-                        </div>
-                    </div>
-                    <!-- Sub Heading -->
-                    <label class="control-label">Sub Heading</label>
-                    <div class="controls">
-                        <div class="input-prepend">
-                            <span class="add-on"><i class="icon-info-sign"></i></span>
-                            <input type="text" class="input-xlarge" id="subheading" name="subheading" placeholder="Sub Heading">
-                        </div>
-                    </div>
-                    <!-- Description -->
-                    <label class="control-label">Description</label>
-                    <div class="controls">
-                        <div class="input-prepend">
-                            <textarea name="description" id="description" class="input-xlarge required" rows="3" cols="80" required="required"></textarea>
-                        </div>
+            </div>
+        </div>
+        <div class="control-group required">
+            <!-- Sub Heading -->
+            <label class="control-label">Title</label>
+            <div class="controls">
+                <div class="input-prepend">
+                    <span class="add-on"><i class="icon-info-sign"></i></span>
+                    <input type="text" class="input-xlarge" id="subheading" name="subheading" placeholder="Title" required="required">
+                </div>
+            </div>
+            <!-- Description -->
+            <label class="control-label">Description</label>
+            <div class="controls">
+                <div class="input-prepend">
+                    <textarea name="description" id="description" class="input-xlarge required" rows="3" cols="80" required="required"></textarea>
+                </div>
+            </div>
+        </div>
+        <!--Event Frequency Toggle -->
+        <div class="control-group required">
+            <label class="control-label">Event Frequency</label>
+            <div class="controls event-type">
+                <div class="input-prepend">
+                    <div class="btn-group" data-toggle="buttons-radio">
+                        <!-- Input for OneTimeEvent was moved up under well to allow use of sibling selectors -->
+                        <label class="btn btn-info"
+                               title="Select for single day event"
+                               onclick="document.getElementById('enddate').required=false;"
+                               for="OneTimeEvent">&nbsp;&nbsp;&nbsp;&nbsp;One Time&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <!-- Input for RecurrentEvent -->
+                        <input type="radio" id="RecurringEvent" name="event_frequency" value="Recurring Event" data-toggle="button" required="required">
+                        <label class="btn btn-info"
+                               title="Select for Recurrent Events (ex: MWF between now and 2014-12-25)"
+                               onclick="document.getElementById('enddate').required=true"
+                               for="RecurringEvent" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recurring&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                     </div>
                 </div>
+            </div>
+            <!-- Days of the Week -->
+            <label class="control-label">Every</label>
+            <div class="controls day-of-week">
+                <div title="For repeating events, select which days of the week the event will take place on."
+                     class="input-prepend">
+                    <div class="btn-group" data-toggle="buttons-radio">
+                        <input type="checkbox" id="Sun" name="days_of_the_week" value="0" data-toggle="button">
+                        <label class="btn btn-info" for="Sun" onclick="">Sun</label>
 
-                <!-- Contact Info -->
-                <div class="control-group required">
-                    <label class="control-label">Customer Service #</label>
-                    <div class="controls">
-                        <div class="input-prepend">
-                            <span class="add-on"><i class="icon-headphones"></i></span>
-                            <input type="tel"
-                                   class="input-xlarge"
-                                   id="customerServicePhone"
-                                   name="service_phone"
-                                   title="Phone Number Format: (999)999-9999"
-                                   placeholder="Enter a contact number"
-                                   required="required">
-                        </div>
-                </div>
-                    <!-- Customer Service Email -->
-                    <label  title="This email will be used to send event confirmations to the event planner."
-                            class="control-label required">Customer Service Email</label>
-                    <div class="controls">
-                        <div title="This email will be used to send event confirmations to the event planner."
-                             class="input-prepend">
-                            <span class="add-on"><i class="icon-envelope"></i></span>
-                            <input type="email" class="input-xlarge" id="customerServiceEmail" name="service_email" placeholder="Enter an email address"  required="required">
-                        </div>
+                        <input type="checkbox" id="Mon" name="days_of_the_week" value="1" data-toggle="button">
+                        <label class="btn btn-info" for="Mon" onclick="">Mon</label>
+
+                        <input type="checkbox" id="Tue" name="days_of_the_week" value="2" data-toggle="button">
+                        <label class="btn btn-info" for="Tue" onclick="">Tue</label>
+
+                        <input type="checkbox" id="Wed" name="days_of_the_week" value="3" data-toggle="button">
+                        <label class="btn btn-info" for="Wed" onclick="">Wed</label>
+
+                        <input type="checkbox" id="Thu" name="days_of_the_week" value="4" data-toggle="button">
+                        <label class="btn btn-info" for="Thu" onclick="">Thu</label>
+
+                        <input type="checkbox" id="Fri" name="days_of_the_week" value="5" data-toggle="button">
+                        <label class="btn btn-info" for="Fri" onclick="">Fri</label>
+
+                        <input type="checkbox" id="Sat" name="days_of_the_week" value="6" data-toggle="button">
+                        <label class="btn btn-info" for="Sat" onclick="">Sat</label>
                     </div>
                 </div>
-		<div> {hidden_fields} </div>
-                <!-- Twitter -->
-                <div class="control-group">
-                    <label class="control-label">Twitter hashtag</label>
-                    <div class="controls">
-                        <div class="input-prepend">
-                            <span class="add-on"><i class="icon-share"></i></span>
-                            <input type="text" class="input-xlarge" id="hashtag" name="hashtag" placeholder="shindigevents" value="shindigevents">
-                        </div>
-                    </div>
+                <div class="days-of-week-error hidden">You must select at least one day of the week</div>
+            </div>
+        </div>
+        <!-- Date -->
+        <div class="control-group required">
+            <label class="control-label event-date required"></label>
+            <div class="controls">
+                <div title="Enter or use the calendar to select an event date or date range for recurring events."
+                     class="input-prepend">
+                    <input type="date" class="input-small" id="startdate" name="start_date" placeholder="Start Date" required="required">
+                    <span> Until </span>
+                    <span class="add-on"><i class="icon-calendar"></i></span>
+                    <input type="date" class="input-small" id="enddate" name="end_date" placeholder="End Date">
                 </div>
-                <!-- Date -->
-                <div class="control-group required">
-                    <label class="control-label required">Date</label>
-                    <div class="controls">
-                        <div title="Enter a date range for recurring events.  For single day events use same date for start and end."
-                             class="input-prepend">
-                            <input type="date" class="input-small" id="startdate" name="start_date" placeholder="Start Date" required="required">
-                            <span> - </span>
-                            <span class="add-on"><i class="icon-calendar"></i></span>
-                            <input type="date" class="input-small" id="enddate" name="end_date" placeholder="End Date" required="required">
-                        </div>
-                    </div>
-                    <!-- Time -->
-                    <label class="control-label">Time</label>
-                    <div class="controls">
-                        <div title="Select the event's daily start and end times."
-                             class="input-prepend">
-                            <input type="time" class="input-small" id="starttime" name="start_time" placeholder="Start Time" required="required">
-                            <span> - </span>
-                            <span class="add-on"><i class="icon-time"></i></span>
-                            <input type="time" class="input-small" id="endtime" name="end_time" placeholder="End Time" required="required">
-                        </div>
-                    </div>
-                    <!-- Days of the Week -->
-                    <div class="controls">
-                        <div title="For repeating events, select which days of the week the event will take place on."
-                             class="input-prepend">
-                            <div class="btn-group" data-toggle="buttons-radio">
-                                <input type="checkbox" id="Sun" name="days_of_the_week" value="0" data-toggle="button">
-                                <label class="btn btn-info" for="Sun" onclick="">Sun</label>
-
-                                <input type="checkbox" id="Mon" name="days_of_the_week" value="1" data-toggle="button">
-                                <label class="btn btn-info" for="Mon" onclick="">Mon</label>
-
-                                <input type="checkbox" id="Tue" name="days_of_the_week" value="2" data-toggle="button">
-                                <label class="btn btn-info" for="Tue" onclick="">Tue</label>
-
-                                <input type="checkbox" id="Wed" name="days_of_the_week" value="3" data-toggle="button">
-                                <label class="btn btn-info" for="Wed" onclick="">Wed</label>
-
-                                <input type="checkbox" id="Thu" name="days_of_the_week" value="4" data-toggle="button">
-                                <label class="btn btn-info" for="Thu" onclick="">Thu</label>
-
-                                <input type="checkbox" id="Fri" name="days_of_the_week" value="5" data-toggle="button">
-                                <label class="btn btn-info" for="Fri" onclick="">Fri</label>
-
-                                <input type="checkbox" id="Sat" name="days_of_the_week" value="6" data-toggle="button">
-                                <label class="btn btn-info" for="Sat" onclick="">Sat</label>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <!-- Time -->
+            <label class="control-label">From</label>
+            <div class="controls">
+                <div title="Select the event's daily start and end times."
+                     class="input-prepend">
+                    <input type="time" class="input-small" id="starttime" name="start_time" placeholder="Start Time" required="required">
+                    <span> &nbsp; to &nbsp;</span>
+                    <span class="add-on"><i class="icon-time"></i></span>
+                    <input type="time" class="input-small" id="endtime" name="end_time" placeholder="End Time" required="required">
                 </div>
-                <div class="control-group required">
-                    <!-- Time Zone -->
-                    <label class="control-label required">Time Zone</label>
-                    <div class="controls">
-                        <div class="input-prepend">
-                            <span class="add-on"><i class="icon-time"></i></span>
-                            <select name="time_zone" id="timeZone" class="shindigInput inputLabel required valid"  required="required">
-                                <option value="America/New_York" label="Eastern">Eastern</option>
-                                <option value="America/Chicago" label="Central">Central</option>
-                                <option value="America/Denver" label="Mountain">Mountain</option>
-                                <option value="America/Phoenix" label="Arizona">Arizona</option>
-                                <option value="America/Los_Angeles" label="Pacific">Pacific</option>
-                                <option value="America/Anchorage" label="Alaska">Alaska</option>
-                                <option value="Pacific/Honolulu" label="Hawaii">Hawaii</option>
-                            </select>
-                        </div>
-                    </div>
-                    <!-- Country -->
-                    <label class="control-label">Country</label>
-                    <div class="controls">
-                        <div class="input-prepend">
-                            <span class="add-on"><i class="icon-flag"></i></span>
-                            <select name="country" id="country" class="shindigInput inputLabel"  required="required" >
-                                <option value="0" label="United States">United States</option>
-                                <option value="1" label="United Kingdom">United Kingdom</option>
-                                <option value="2" label="UTC">UTC</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <!-- Create My Event -->
-                <div class="control-group">
-                    <label class="control-label"></label>
-                    <div class="controls">
-                        <button type="submit" class="btn btn-success" rel="tooltip" title="Create Event">Create My Event</button>
-                    </div>
-                </div>
-
-            </form>
+            </div>
+        </div>
+        <!-- Create My Event -->
+        <div class="control-group">
+            <label class="control-label"></label>
+            <div class="controls">
+                <button type="submit"
+                        class="btn btn-success pull-right"
+                        rel="tooltip"
+                        title="Create Event">Create My Event</button>
+            </div>
         </div>
     </div>
+</li>
+<!-- Editable List of Created Events (delete only for now -->
+<li>
+
+
+    <a href="javascript:TF_ClearFilters('event-table');TF_Filter('event-table');">Clear Filters</a>
+    <table id="event-table" class="sortable">
+        <thead>
+        <tr>
+            <th>&nbsp;&nbsp;&nbsp;Title&nbsp;&nbsp;&nbsp;</th>
+            <th>&nbsp;&nbsp;Description&nbsp;&nbsp;</th>
+            <th>Event&nbsp;Date</th>
+            <th>Start&nbsp;Time</th>
+            <th>End&nbsp;Time</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody id="event-list">
+        </tbody>
+        <tfoot>
+        <tr>
+            <th colspan="6">
+                <div class='shindig-legend'>
+                    <div class='legend-scale'>
+                        <ul class='legend-labels'>
+                            <li title="Faculty-led Q&A sessions">
+                                <span style='background:#60C0C5;'></span>Office Hours (OH)</li>
+                            <li title="Teaching Assistant or student led discussions on selected course material">
+                                <span style='background:#FFCC66;'></span>Discussion Section (DS)</li>
+                            <li title="Unstructured peer to peer teaching, sharing, and review sessions">
+                                <span style='background:#438FA8;'></span>Study Hall (SH)</li>
+                        </ul>
+                    </div>
+                </div>
+            </th>
+        </tr>
+        </tfoot>
+    </table>
+</li>
+</ul>
 </div>
+</form>
+<iframe id="postTarget" class="hide" name="postTarget"></iframe>
 
 </div>
