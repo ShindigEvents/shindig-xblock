@@ -1,0 +1,21 @@
+
+#shindig-signup .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked ~ div:nth-of-type(4) > div:nth-of-type(1) > div input:nth-of-type(2) {
+    visibility: visible !important;
+}
+
+#shindig-signup .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked ~ div:nth-of-type(4) > div:nth-of-type(1) > div > span:nth-of-type(1),
+#shindig-signup .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked ~ div:nth-of-type(4) > div:nth-of-type(1) > div > span:nth-of-type(1)  span {
+    visibility: visible;
+}
+
+#shindig-signup .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked ~ div:nth-of-type(4) > div:nth-of-type(1) > div input:nth-of-type(4) {
+    visibility: hidden;
+}
+
+#shindig-signup .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked ~ div:nth-of-type(4) > div:nth-of-type(1) > div > span:nth-of-type(4) {
+    visibility: hidden;
+}
+
+#shindig-signup .tab-container .sections li:nth-child(2) .well div:nth-of-type(4)   input {
+    width: 124px !important;
+}
