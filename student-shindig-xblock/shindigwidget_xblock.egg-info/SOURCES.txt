@@ -1,0 +1,17 @@
+shindigwidget/__init__.py
+shindigwidget/shindigwidget.py
+shindigwidget/static/.DS_Store
+shindigwidget/static/README.txt
+shindigwidget/static/css/shindigwidget.css
+shindigwidget/static/css/webshim-overrides.css
+shindigwidget/static/html/shindigwidget.html
+shindigwidget/static/images/shindig_header_logo.png
+shindigwidget/static/js/src/detect.js
+shindigwidget/static/js/src/modernizr.js
+shindigwidget/static/js/src/shindigwidget.js
+shindigwidget_xblock.egg-info/PKG-INFO
+shindigwidget_xblock.egg-info/SOURCES.txt
+shindigwidget_xblock.egg-info/dependency_links.txt
+shindigwidget_xblock.egg-info/entry_points.txt
+shindigwidget_xblock.egg-info/requires.txt
+shindigwidget_xblock.egg-info/top_level.txt
