@@ -775,7 +775,7 @@ function ShindigXBlock(runtime, element) {
         return document.getElementById("startdate").value = new Date().toISOString().slice(0, 10),
             form.onsubmit = validateForm, form.onkeypress = checkEnter, {
             host: host,
-            path: "readevents",
+            path: "events",
             buildLink: setLinkFormat
         };
     }();
@@ -783,56 +783,121 @@ function ShindigXBlock(runtime, element) {
     !function() {
         "use strict";
         var postTarget, clearFilters, el, getEvents, populateEvents, buildTD, webcalURL, isFirstTime;
-        isFirstTime = !0, webcalURL = "webcal://" + shindig.host + "/createical?eid=", postTarget = document.getElementById("postTarget"),
-            postTarget && (postTarget.onload = function() {
-            if (isFirstTime) isFirstTime = !1; else {
+        isFirstTime = !0;
+        webcalURL = "webcal://" + shindig.host + "/createical?eid=";
+        postTarget = document.getElementById("postTarget");
+            
+        postTarget && (postTarget.onload = function() {
+            if (isFirstTime) {
+                isFirstTime = !1; 
+            } else {
                 getEvents();
                 var eventsRadioButton = document.getElementById("s3");
                 eventsRadioButton && (eventsRadioButton.checked = !0);
             }
-        }), clearFilters = document.getElementById("shindig-clear-filters"), clearFilters && (clearFilters.onclick = function() {
+        });
+
+        clearFilters = document.getElementById("shindig-clear-filters"); 
+
+        clearFilters && (clearFilters.onclick = function() {
             TF_ClearFilters("event-table"), TF_Filter("event-table");
         });
-        for (var element in shindig_defaults) shindig_defaults.hasOwnProperty(element) && (el = document.getElementById(element),
-            el && (el.value = shindig_defaults[element]));
+
+        // loops over all of the default field values and sets the 
+        // associated input fields with their values
+        for (var element in shindig_defaults) { 
+            shindig_defaults.hasOwnProperty(element);
+            el = document.getElementById(element);
+
+            if(el) {
+                el.value = shindig_defaults[element];
+            }
+        }
+
         JSONP.init({
             error: function(ex) {
                 alert("Failed to load : " + ex.url);
             }
-        }), buildTD = function(tr, data) {
+        });
+
+        buildTD = function(tr, data) {
             var td;
             return td = document.createElement("td"), td.innerHTML = data, tr.appendChild(td),
                 td;
-        }, populateEvents = function(data) {
-            var eventDateSortable, eventList = document.getElementById("event-list"), len = data.length || 0, item = null, tr = null;
-            if (isFirstTime = !1, eventList.innerHTML = "", eventList && data && len > 0) for (var i = 0; len > i; i++) {
-                var eventDate, eventDateSortable, now, startTime, endTime, special;
-                item = data[i], now = new Date(), startTime = new Date(item.start), eventDate = startTime.toDateString();
-                try {
-                    eventDateSortable = startTime.toISOString().slice(0, 10);
-                } catch (ex) {
-                    eventDateSortable = ex.message;
+        };
+
+        // Populates the events on the Events tab page for instructors to see which courses
+        // are currently going on.
+        populateEvents = function(data) {
+            console.log("AHHHH");
+            var eventDateSortable;
+            var eventList = document.getElementById("event-list"); 
+            var len = data.length || 0;
+            var item = null;
+            var tr = null;
+
+            if (isFirstTime = !1, eventList.innerHTML = "", eventList && data && len > 0) {
+                 
+                 for (var i = 0; len > i; i++) {
+                    var eventDate, eventDateSortable, now, startTime, endTime, special;
+
+                    item = data[i], now = new Date(), startTime = new Date(item.start), eventDate = startTime.toDateString();
+                   
+                    try {
+                        eventDateSortable = startTime.toISOString().slice(0, 10);
+                    } catch (ex) {
+                        eventDateSortable = ex.message;
+                    }
+
+                    try {
+                        startTime = startTime.toLocaleTimeString();
+                    } catch (ex) {
+                        startT
+                        ime = ex.message;
+                    }
+
+                    endTime = new Date(item.end); 
+                    endTime = endTime.toLocaleTimeString();
+                    tr = document.createElement("tr");
+                    tr.className += "event-type " + item.event_type;
+                    buildTD(tr, item.event_type + " - " + item.subheading + '<a href="' + webcalURL + item.eid + '" title="Click to add to Calendar"><i class="icon-calendar"></i></a>');
+                    buildTD(tr, item.description);
+                    special = buildTD(tr, eventDate);
+                    special.setAttribute("sorttable_customkey", eventDateSortable);
+                    buildTD(tr, startTime);
+                    buildTD(tr, endTime);
+                    shindig.buildLink(tr, item);
+                    eventList.appendChild(tr);
                 }
-                try {
-                    startTime = startTime.toLocaleTimeString();
-                } catch (ex) {
-                    startTime = ex.message;
-                }
-                endTime = new Date(item.end), endTime = endTime.toLocaleTimeString(), tr = document.createElement("tr"),
-                    tr.className += "event-type " + item.event_type, buildTD(tr, item.event_type + " - " + item.subheading + '<a href="' + webcalURL + item.eid + '" title="Click to add to Calendar"><i class="icon-calendar"></i></a>'),
-                    buildTD(tr, item.description), special = buildTD(tr, eventDate), special.setAttribute("sorttable_customkey", eventDateSortable),
-                    buildTD(tr, startTime), buildTD(tr, endTime), shindig.buildLink(tr, item), eventList.appendChild(tr);
             }
             len > 0 && (document.querySelector(".fltrow") ? TF_Filter("event-table") : window.setTimeout(function() {
                 setFilterGrid("event-table"), TF_Filter("event-table");
             }, 100));
-        }, (getEvents = function() {
+        };
+
+        getEvents = function() {
             var institution, course;
-            institution = document.getElementById("institution").value, course = document.getElementById("course").value,
-                JSONP.get("//" + shindig.host + "/" + shindig.path + "/", {
-                    institution: institution,
-                    course: course
-                }, populateEvents);
-        })();
+            institution = document.getElementById("institution").value; 
+            course = document.getElementById("course").value;
+
+            JSONP.get("//" + shindig.host + "/" + shindig.path + "/", {
+                institution: institution,
+                course: course
+            }, populateEvents);
+        };
+
+        $("#tabs").tabs({ active: 2 })();
+        console.log("tabs", $("#tabs"));
+
+        $('.tabs').bind('click', function (e) {
+            window.activeTab = e.target;
+
+            var label = e.target.textContent;
+            if(label == "Events") {
+                //alert.show("ahh");
+                getEvents();
+            }
+            
+        });
     }();
 }
