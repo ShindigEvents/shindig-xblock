@@ -886,8 +886,8 @@ function ShindigXBlock(runtime, element) {
             }, populateEvents);
         };
 
-        $("#tabs").tabs({ active: 2 })();
-        console.log("tabs", $("#tabs"));
+        // $("#tabs").tabs({ active: 2 })();
+        // console.log("tabs", $("#tabs"));
 
         $('.tabs').bind('click', function (e) {
             window.activeTab = e.target;
