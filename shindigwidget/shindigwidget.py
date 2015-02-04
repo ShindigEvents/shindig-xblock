@@ -40,20 +40,6 @@ class ShindigXBlock(XBlock):
 
         return frag
 
-    def studio_view(self, context):
-        """
-        The primary view of the ShindigXBlock, shown to students
-        when viewing courses.
-        """
-        html = self.resource_string("static/html/shindigwidget1.html")
-        frag = Fragment(html.format(self=self))
-        frag.add_javascript(self.resource_string("static/js/src/modernizr.js"))
-        frag.add_css(self.resource_string("static/css/shindigwidget.css"))
-        frag.add_javascript(self.resource_string("static/js/src/shindigwidget.js"))
-        frag.initialize_js('ShindigXBlock')
-
-        return frag
-
     # TO-DO: change this handler to perform your own actions.  You may need more
     # than one handler, or you may not need any handlers at all.
     @XBlock.json_handler
@@ -77,11 +63,5 @@ class ShindigXBlock(XBlock):
              """<vertical_demo>
                 <shindigwidget/>
                 </vertical_demo>
-             """),
-            ("ShindigXBlock1",
-             """<vertical_demo>
-                <shindigwidget/>
-                </vertical_demo>
-             """),
-            
+             """),           
         ]
