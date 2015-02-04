@@ -33,6 +33,9 @@ setup(
     entry_points={
         'xblock.v1': [
             'shindigwidget = shindigwidget:ShindigXBlock',
+        ],
+        'xblock_studio.v1': [
+            'shindigwidget1 = shindigwidget:ShindigXBlock1',
         ]
     },
     package_data=package_data("shindigwidget", ["static", "public"]),
