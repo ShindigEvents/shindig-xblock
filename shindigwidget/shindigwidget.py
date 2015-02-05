@@ -25,6 +25,20 @@ class ShindigXBlock(XBlock):
         data = pkg_resources.resource_string(__name__, path)
         return data.decode("utf8")
 
+    def studio_view(self, context):
+        """
+        The primary view of the ShindigXBlock, shown to students
+        when viewing courses.
+        """
+        hdtml = self.resource_string("static/html/shindigwidget1.html")
+        frag = Fragment(html.format(self=self))
+        frag.add_javascript(self.resource_string("static/js/src/modernizr.js"))
+        frag.add_css(self.resource_string("static/css/shindigwidget.css"))
+        frag.add_javascript(self.resource_string("static/js/src/shindigwidget.js"))
+        frag.initialize_js('ShindigXBlock')
+
+        return frag
+
     # TO-DO: change this view to display your data your own way.
     def student_view(self, context=None):
         """
