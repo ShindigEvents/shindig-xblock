@@ -27,15 +27,11 @@ class ShindigXBlock(XBlock):
 
     def studio_view(self, context):
         """
-        The primary view of the ShindigXBlock, shown to students
-        when viewing courses.
+        Create a fragment used to display the edit view in the Studio.
         """
-        html = self.resource_string("static/html/shindigwidget1.html")
-        frag = Fragment(html.format(self=self))
-        frag.add_javascript(self.resource_string("static/js/src/modernizr.js"))
-        frag.add_css(self.resource_string("static/css/shindigwidget.css"))
-        frag.add_javascript(self.resource_string("static/js/src/shindigwidget.js"))
-        frag.initialize_js('ShindigXBlock')
+        html_str = pkg_resources.resource_string(__name__, "static/html/simplevideo_edit.html")
+        href = self.href or ''
+        frag = Fragment(unicode(html_str).format(href=href, maxwidth=self.maxwidth, maxheight=self.maxheight))
 
         return frag
 
