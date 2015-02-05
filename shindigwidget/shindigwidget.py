@@ -30,7 +30,7 @@ class ShindigXBlock(XBlock):
         The primary view of the ShindigXBlock, shown to students
         when viewing courses.
         """
-        hdtml = self.resource_string("static/html/shindigwidget1.html")
+        html = self.resource_string("static/html/shindigwidget1.html")
         frag = Fragment(html.format(self=self))
         frag.add_javascript(self.resource_string("static/js/src/modernizr.js"))
         frag.add_css(self.resource_string("static/css/shindigwidget.css"))
