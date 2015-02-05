@@ -11,9 +11,7 @@ class ShindigXBlock(XBlock):
     TO-DO: document what your XBlock does.
     """
 
-    href = String(help="URL of the video page at the provider", default=None, scope=Scope.content)
-    maxwidth = Integer(help="Maximum width of the video", default=800, scope=Scope.content)
-    maxheight = Integer(help="Maximum height of the video", default=450, scope=Scope.content)
+
 
     # Fields are defined on the class.  You can access them in your code as
     # self.<fieldname>.
@@ -35,7 +33,7 @@ class ShindigXBlock(XBlock):
         """
         html_str = pkg_resources.resource_string(__name__, "static/html/shindigwidget1.html")
         href = self.href or ''
-        frag = Fragment(unicode(html_str).format(href=href, maxwidth=self.maxwidth, maxheight=self.maxheight))
+        frag = Fragment(unicode(html_str))
 
         return frag
 
