@@ -32,7 +32,7 @@ class ShindigXBlock(XBlock):
         Create a fragment used to display the edit view in the Studio.
         """
         html_str = pkg_resources.resource_string(__name__, "static/html/shindigwidget1.html")
-        href = self.href or ''
+        
         frag = Fragment(unicode(html_str))
 
         return frag
