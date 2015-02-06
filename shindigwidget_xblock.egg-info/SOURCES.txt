@@ -3,8 +3,8 @@ shindigwidget/shindigwidget.py
 shindigwidget/static/README.txt
 shindigwidget/static/css/shindigwidget.css
 shindigwidget/static/css/webshim-overrides.css
-shindigwidget/static/html/shindigwidget.html
-shindigwidget/static/html/shindigwidget1.html
+shindigwidget/static/html/shindig_instructor.html
+shindigwidget/static/html/shindig_student.html
 shindigwidget/static/images/shindig_header_logo.png
 shindigwidget/static/js/src/detect.js
 shindigwidget/static/js/src/modernizr.js

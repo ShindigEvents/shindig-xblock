@@ -75,8 +75,7 @@ class ShindigXBlock(XBlock):
         """A canned scenario for display in the workbench."""
         return [
             ("ShindigXBlock",
-             """<vertical_demo>
+             """
                 <shindigwidget/>
-                </vertical_demo>
              """),           
         ]
