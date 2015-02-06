@@ -31,7 +31,7 @@ class ShindigXBlock(XBlock):
         """
         Create a fragment used to display the edit view in the Studio.
         """
-        html = self.resource_string("static/html/shindigwidget1.html")
+        html = self.resource_string("static/html/shindig_instructor.html")
         frag = Fragment(html.format(self=self))
         frag.add_javascript(self.resource_string("static/js/src/modernizr.js"))
         frag.add_css(self.resource_string("static/css/shindigwidget.css"))
@@ -46,7 +46,7 @@ class ShindigXBlock(XBlock):
         The primary view of the ShindigXBlock, shown to students
         when viewing courses.
         """
-        html = self.resource_string("static/html/shindigwidget.html")
+        html = self.resource_string("static/html/shindig_student.html")
         frag = Fragment(html.format(self=self))
         frag.add_javascript(self.resource_string("static/js/src/modernizr.js"))
         frag.add_css(self.resource_string("static/css/shindigwidget.css"))
