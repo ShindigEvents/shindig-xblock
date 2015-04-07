@@ -1,60 +1,72 @@
+
 <div class="shindigwidget_block">
     
-<form id="shindig-signup"
-      class="form-horizontal"
-      method="post"
-      action="//54.85.91.58:3000/events/"
-      target="postTarget"
-      autocomplete="on">
-<div class="tab-container">
-<input type="radio" id="s1" name="s" checked="">
-<input type="radio" id="s2" name="s">
-<input type="radio" id="s3" name="s">
+  <form id="shindig-signup-student"
+        class="form-horizontal"
+        method="post"
+        action=""
+        target="postTarget"
+        autocomplete="on">
+    <div class="tab-container">
 
-<ul class="sections">
-<!-- Default Information read from environment -->
+      <input type="radio" id="s-event" name="s" checked="">
+      <div class="tabs">
+          <label for="s-event">Events</label>
+      </div>
 
-<!-- Editable List of Created Events (delete only for now -->
-<li>
+      <ul class="sections">
+      <!-- Default Information read from environment -->
+      <!-- Editable List of Created Events (delete only for now -->
+        <li>
+          <a id="s-shindig-clear-filters" href="javascript:void(0)">Clear Filters</a>
 
+          <table id="s-event-table" class="sortable">
+            <thead>
+              <tr>
+                <th>&nbsp;&nbsp;&nbsp;Title&nbsp;&nbsp;&nbsp;</th>
+                <th>&nbsp;&nbsp;Description&nbsp;&nbsp;</th>
+                <th>Event&nbsp;Date</th>
+                <th>Start&nbsp;Time</th>
+                <th>End&nbsp;Time</th>
+                <th>Action</th>
+              </tr>
+            </thead>
 
-    <a id="shindig-clear-filters" href="javascript:void(0)">Clear Filters</a>
-    <table id="event-table" class="sortable">
-        <thead>
-        <tr>
-            <th>&nbsp;&nbsp;&nbsp;Title&nbsp;&nbsp;&nbsp;</th>
-            <th>&nbsp;&nbsp;Description&nbsp;&nbsp;</th>
-            <th>Event&nbsp;Date</th>
-            <th>Start&nbsp;Time</th>
-            <th>End&nbsp;Time</th>
-            <th>Action</th>
-        </tr>
-        </thead>
-        <tbody id="event-list">
-        </tbody>
-        <tfoot>
-        <tr>
-            <th colspan="6">
-                <div class='shindig-legend'>
+            <tbody id="s-event-list">
+              <tr>
+                <td colspan="6">
+                  <div class="ui-loading s-shindig-load">
+                    <p><span class="spin"><i class="icon fa fa-refresh"></i></span> <span class="copy">Loading</span></p>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <th colspan="6">
+                  <div class='shindig-legend'>
                     <div class='legend-scale'>
-                        <ul class='legend-labels'>
-                            <li title="Faculty-led Q&A sessions">
-                                <span style='background:#60C0C5;'></span>Office Hours (OH)</li>
-                            <li title="Teaching Assistant or student led discussions on selected course material">
-                                <span style='background:#FFCC66;'></span>Discussion Section (DS)</li>
-                            <li title="Unstructured peer to peer teaching, sharing, and review sessions">
-                                <span style='background:#438FA8;'></span>Study Hall (SH)</li>
-                        </ul>
+                      <ul class='legend-labels'>
+                        <li title="Faculty-led Q&A sessions">
+                          <span style='background:#60C0C5;'></span>Office Hours (OH)</li>
+                        <li title="Teaching Assistant or student led discussions on selected course material">
+                          <span style='background:#FFCC66;'></span>Discussion Section (DS)</li>
+                        <li title="Unstructured peer to peer teaching, sharing, and review sessions">
+                          <span style='background:#438FA8;'></span>Study Hall (SH)</li>
+                      </ul>
                     </div>
-                </div>
-            </th>
-        </tr>
-        </tfoot>
-    </table>
-</li>
-</ul>
-</div>
-</form>
-<iframe id="postTarget" class="hide" name="postTarget"></iframe>
+                  </div>
+                </th>
+              </tr>
+            </tfoot>
+          </table>
 
+        </li>
+      </ul>
+
+    </div>
+  </form>
+
+  <iframe id="postTarget" class="hide" name="postTarget"></iframe>
 </div>
