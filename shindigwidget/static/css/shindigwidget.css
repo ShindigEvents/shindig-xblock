@@ -6,7 +6,286 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- */#shindig-signup{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13px;line-height:18px;color:#333;background-color:#fff;margin:0 0 18px}#shindig-signup button,#shindig-signup input,#shindig-signup select,#shindig-signup textarea{margin:0;font-size:100%;vertical-align:middle}#shindig-signup button,#shindig-signup input{*overflow:visible}#shindig-signup button::-moz-focus-inner,#shindig-signup input::-moz-focus-inner{padding:0;border:0}#shindig-signup button{cursor:pointer;-webkit-appearance:button}#shindig-signup textarea{overflow:auto;vertical-align:top}#shindig-signup li{line-height:18px}#shindig-signup button,#shindig-signup input,#shindig-signup label,#shindig-signup select,#shindig-signup textarea{font-size:13px;font-weight:400;line-height:18px}#shindig-signup button,#shindig-signup input,#shindig-signup select,#shindig-signup textarea{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}#shindig-signup input,#shindig-signup select,#shindig-signup textarea{padding:4px;color:#555;border:1px solid #ccc;border-radius:3px}#shindig-signup input[type=checkbox],#shindig-signup input[type=radio]{width:auto;height:auto;padding:0;margin:3px 0;*margin-top:0;line-height:normal;cursor:pointer;border-radius:0}#shindig-signup select{height:28px;*margin-top:4px;line-height:28px;width:220px;background-color:#fff}#shindig-signup textarea{height:auto}#shindig-signup input,#shindig-signup textarea{box-shadow:inset 0 1px 1px rgba(0,0,0,.075);transition:border linear .2s,box-shadow linear .2s}#shindig-signup input:focus,#shindig-signup textarea:focus{border-color:rgba(82,168,236,.8);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(82,168,236,.6);outline:0}#shindig-signup input[type=checkbox]:focus,#shindig-signup input[type=radio]:focus,#shindig-signup select:focus{box-shadow:none;outline:thin dotted #333;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}#shindig-signup .input-small{width:90px}#shindig-signup .input-xlarge{width:270px}#shindig-signup input:focus:required:invalid,#shindig-signup textarea:focus:required:invalid{color:#b94a48;border-color:#ee5f5b}#shindig-signup input:focus:required:invalid:focus,#shindig-signup textarea:focus:required:invalid:focus{border-color:#e9322d;box-shadow:0 0 6px #f8b9b7}#shindig-signup .input-prepend{margin-bottom:5px;*zoom:1}#shindig-signup .input-prepend:after,#shindig-signup .input-prepend:before{display:table;content:""}#shindig-signup .input-prepend:after{clear:both}#shindig-signup .input-prepend input{border-radius:0 3px 3px 0}#shindig-signup .input-prepend input:focus{position:relative;z-index:2}#shindig-signup .input-prepend .add-on{float:left;display:block;width:auto;min-width:16px;height:18px;margin-right:-1px;padding:4px 5px;font-weight:400;line-height:18px;color:#999;text-align:center;text-shadow:0 1px 0 #fff;background-color:#f5f5f5;border:1px solid #ccc;border-radius:3px 0 0 3px;*margin-top:1px}#shindig-signup.form-horizontal input,#shindig-signup.form-horizontal select,#shindig-signup.form-horizontal textarea{display:inline-block;margin-bottom:0}#shindig-signup .control-group{margin-bottom:9px}#shindig-signup.form-horizontal .control-group{margin-bottom:18px;*zoom:1}#shindig-signup.form-horizontal .control-group:after,#shindig-signup.form-horizontal .control-group:before{display:table;content:""}#shindig-signup.form-horizontal .control-group:after{clear:both}#shindig-signup.form-horizontal .control-label{float:left;width:140px;padding-top:5px;text-align:right}#shindig-signup.form-horizontal .controls{margin-left:160px}#shindig-signup table{max-width:100%;border-collapse:collapse;border-spacing:0}#shindig-signup [class^=icon-]{display:inline-block;width:14px;height:14px;line-height:14px;vertical-align:text-top;background-image:url(//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/img/glyphicons-halflings.png);background-position:14px 14px;background-repeat:no-repeat;*margin-right:.3em}#shindig-signup [class^=icon-]:last-child{*margin-left:0}#shindig-signup .icon-envelope{background-position:-72px 0}#shindig-signup .icon-home{background-position:0 -24px}#shindig-signup .icon-time{background-position:-48px -24px}#shindig-signup .icon-flag{background-position:-312px -24px}#shindig-signup .icon-headphones{background-position:-336px -24px}#shindig-signup .icon-book{background-position:-48px -48px}#shindig-signup .icon-info-sign{background-position:-120px -96px}#shindig-signup .icon-calendar{background-position:-192px -120px}#shindig-signup .well{min-height:20px;background-color:#f5f5f5;border:1px solid #eee;border:1px solid rgba(0,0,0,.05);border-radius:4px;box-shadow:inset 0 1px 1px rgba(0,0,0,.05)}#shindig-signup .btn{display:inline-block;padding:4px 10px;margin-bottom:0;font-size:13px;line-height:18px;color:#333;text-align:center;text-shadow:0 1px 1px rgba(255,255,255,.75);vertical-align:middle;background-color:#f5f5f5;background-image:linear-gradient(top,#fff,#e6e6e6);background-repeat:repeat-x;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:4px;box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.05);cursor:pointer;filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);*margin-left:.3em}#shindig-signup .btn:first-child{*margin-left:0}#shindig-signup .btn:hover{color:#333;text-decoration:none;background-color:#e6e6e6;background-position:0 -15px;transition:background-position .1s linear}#shindig-signup .btn:focus{outline:thin dotted #333;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}#shindig-signup .btn:active{background-image:none;box-shadow:inset 0 2px 4px rgba(0,0,0,.15),0 1px 2px rgba(0,0,0,.05);background-color:#e6e6e6;outline:0}#shindig-signup .btn-info,#shindig-signup .btn-info:hover{text-shadow:0 -1px 0 rgba(0,0,0,.25);color:#fff}#shindig-signup .btn-success{text-shadow:0 -1px 0 rgba(0,0,0,.25);color:#fff;background-color:#5bb75b;background-image:linear-gradient(top,#62c462,#51a351);background-repeat:repeat-x;border-color:#51a351 #51a351 #387038;border-color:rgba(0,0,0,.1)rgba(0,0,0,.1)rgba(0,0,0,.25);filter:progid:DXImageTransform.Microsoft.gradient(enabled=false)}#shindig-signup .btn-success:hover{text-shadow:0 -1px 0 rgba(0,0,0,.25);color:#fff}#shindig-signup .btn-success:active,#shindig-signup .btn-success:hover{background-color:#51a351}#shindig-signup .btn-info{background-color:#49afcd;background-image:linear-gradient(top,#5bc0de,#2f96b4);background-repeat:repeat-x;border-color:#2f96b4 #2f96b4 #1f6377;border-color:rgba(0,0,0,.1)rgba(0,0,0,.1)rgba(0,0,0,.25);filter:progid:DXImageTransform.Microsoft.gradient(enabled=false)}#shindig-signup .btn-info:active,#shindig-signup .btn-info:hover{background-color:#2f96b4}#shindig-signup button.btn{*padding-top:2px;*padding-bottom:2px}#shindig-signup button.btn::-moz-focus-inner{padding:0;border:0}#shindig-signup input[type=submit].btn::-moz-focus-inner{padding:0;border:0}#shindig-signup .btn-group{position:relative;*zoom:1;*margin-left:.3em}#shindig-signup .btn-group:after,#shindig-signup .btn-group:before{display:table;content:""}#shindig-signup .btn-group:after{clear:both}#shindig-signup .btn-group:first-child{*margin-left:0}#shindig-signup .btn-group .btn{position:relative;float:left;margin-left:-1px;border-radius:0}#shindig-signup .btn-group .btn:last-child{border-top-right-radius:4px;border-bottom-right-radius:4px}#shindig-signup .btn-group .btn:active,#shindig-signup .btn-group .btn:focus,#shindig-signup .btn-group .btn:hover{z-index:2}#shindig-signup .navbar-search .search-query :-moz-placeholder{color:#eee}#shindig-signup .pull-right{float:right}.hide{display:none}/*!
+ */
+#shindig-signup, #shindig-signup-student {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333;
+  background-color: #fff;
+  margin: 0 0 18px; }
+  #shindig-signup button, #shindig-signup input, #shindig-signup select, #shindig-signup textarea, #shindig-signup-student button, #shindig-signup-student input, #shindig-signup-student select, #shindig-signup-student textarea {
+    margin: 0;
+    font-size: 100%;
+    vertical-align: middle; }
+  #shindig-signup button, #shindig-signup input, #shindig-signup-student button, #shindig-signup-student input {
+    *overflow: visible; }
+  #shindig-signup button::-moz-focus-inner, #shindig-signup input::-moz-focus-inner, #shindig-signup-student button::-moz-focus-inner, #shindig-signup-student input::-moz-focus-inner {
+    padding: 0;
+    border: 0; }
+  #shindig-signup button, #shindig-signup-student button {
+    cursor: pointer;
+    -webkit-appearance: button; }
+  #shindig-signup textarea, #shindig-signup-student textarea {
+    overflow: auto;
+    vertical-align: top; }
+  #shindig-signup li, #shindig-signup-student li {
+    line-height: 18px; }
+  #shindig-signup button, #shindig-signup input, #shindig-signup label, #shindig-signup select, #shindig-signup textarea, #shindig-signup-student button, #shindig-signup-student input, #shindig-signup-student label, #shindig-signup-student select, #shindig-signup-student textarea {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px; }
+  #shindig-signup button, #shindig-signup input, #shindig-signup select, #shindig-signup textarea, #shindig-signup-student button, #shindig-signup-student input, #shindig-signup-student select, #shindig-signup-student textarea {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+  #shindig-signup input, #shindig-signup select, #shindig-signup textarea, #shindig-signup-student input, #shindig-signup-student select, #shindig-signup-student textarea {
+    padding: 4px;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 3px; }
+  #shindig-signup input[type=checkbox], #shindig-signup input[type=radio], #shindig-signup-student input[type=checkbox], #shindig-signup-student input[type=radio] {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 3px 0;
+    *margin-top: 0;
+    line-height: normal;
+    cursor: pointer;
+    border-radius: 0; }
+  #shindig-signup select, #shindig-signup-student select {
+    height: 28px;
+    *margin-top: 4px;
+    line-height: 28px;
+    width: 220px;
+    background-color: #fff; }
+  #shindig-signup textarea, #shindig-signup-student textarea {
+    height: auto; }
+  #shindig-signup input, #shindig-signup textarea, #shindig-signup-student input, #shindig-signup-student textarea {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border linear .2s,box-shadow linear .2s; }
+  #shindig-signup input:focus, #shindig-signup textarea:focus, #shindig-signup-student input:focus, #shindig-signup-student textarea:focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    outline: 0; }
+  #shindig-signup input[type=checkbox]:focus, #shindig-signup input[type=radio]:focus, #shindig-signup-student input[type=checkbox]:focus, #shindig-signup-student input[type=radio]:focus {
+    box-shadow: none;
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+  #shindig-signup select:focus, #shindig-signup-student select:focus {
+    box-shadow: none;
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+  #shindig-signup .input-small, #shindig-signup-student .input-small {
+    width: 90px; }
+  #shindig-signup .input-xlarge, #shindig-signup-student .input-xlarge {
+    width: 270px; }
+  #shindig-signup input:focus:required:invalid, #shindig-signup textarea:focus:required:invalid, #shindig-signup-student input:focus:required:invalid, #shindig-signup-student textarea:focus:required:invalid {
+    color: #b94a48;
+    border-color: #ee5f5b; }
+  #shindig-signup input:focus:required:invalid:focus, #shindig-signup textarea:focus:required:invalid:focus, #shindig-signup-student input:focus:required:invalid:focus, #shindig-signup-student textarea:focus:required:invalid:focus {
+    border-color: #e9322d;
+    box-shadow: 0 0 6px #f8b9b7; }
+  #shindig-signup .input-prepend, #shindig-signup-student .input-prepend {
+    margin-bottom: 5px;
+    *zoom: 1; }
+    #shindig-signup .input-prepend:after, #shindig-signup .input-prepend:before, #shindig-signup-student .input-prepend:after, #shindig-signup-student .input-prepend:before {
+      display: table;
+      content: ""; }
+    #shindig-signup .input-prepend:after, #shindig-signup-student .input-prepend:after {
+      clear: both; }
+    #shindig-signup .input-prepend input, #shindig-signup-student .input-prepend input {
+      border-radius: 0 3px 3px 0; }
+      #shindig-signup .input-prepend input:focus, #shindig-signup-student .input-prepend input:focus {
+        position: relative;
+        z-index: 2; }
+    #shindig-signup .input-prepend .add-on, #shindig-signup-student .input-prepend .add-on {
+      float: left;
+      display: block;
+      width: auto;
+      min-width: 16px;
+      height: 18px;
+      margin-right: -1px;
+      padding: 4px 5px;
+      font-weight: 400;
+      line-height: 18px;
+      color: #999;
+      text-align: center;
+      text-shadow: 0 1px 0 #fff;
+      background-color: #f5f5f5;
+      border: 1px solid #ccc;
+      border-radius: 3px 0 0 3px;
+      *margin-top: 1px; }
+  #shindig-signup.form-horizontal input, #shindig-signup.form-horizontal select, #shindig-signup.form-horizontal textarea, #shindig-signup-student.form-horizontal input, #shindig-signup-student.form-horizontal select, #shindig-signup-student.form-horizontal textarea {
+    display: inline-block;
+    margin-bottom: 0; }
+  #shindig-signup .control-group, #shindig-signup-student .control-group {
+    margin-bottom: 9px; }
+  #shindig-signup.form-horizontal .control-group, #shindig-signup-student.form-horizontal .control-group {
+    margin-bottom: 18px;
+    *zoom: 1; }
+    #shindig-signup.form-horizontal .control-group:after, #shindig-signup.form-horizontal .control-group:before, #shindig-signup-student.form-horizontal .control-group:after, #shindig-signup-student.form-horizontal .control-group:before {
+      display: table;
+      content: ""; }
+    #shindig-signup.form-horizontal .control-group:after, #shindig-signup-student.form-horizontal .control-group:after {
+      clear: both; }
+  #shindig-signup.form-horizontal .control-label, #shindig-signup-student.form-horizontal .control-label {
+    float: left;
+    width: 140px;
+    padding-top: 5px;
+    text-align: right; }
+  #shindig-signup.form-horizontal .controls, #shindig-signup-student.form-horizontal .controls {
+    margin-left: 160px; }
+  #shindig-signup table, #shindig-signup-student table {
+    max-width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0; }
+  #shindig-signup [class^=icon-], #shindig-signup-student [class^=icon-] {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    vertical-align: text-top;
+    background-image: url(//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/img/glyphicons-halflings.png);
+    background-position: 14px 14px;
+    background-repeat: no-repeat;
+    *margin-right: .3em; }
+    #shindig-signup [class^=icon-]:last-child, #shindig-signup-student [class^=icon-]:last-child {
+      *margin-left: 0; }
+  #shindig-signup .icon-envelope, #shindig-signup-student .icon-envelope {
+    background-position: -72px 0; }
+  #shindig-signup .icon-home, #shindig-signup-student .icon-home {
+    background-position: 0 -24px; }
+  #shindig-signup .icon-time, #shindig-signup-student .icon-time {
+    background-position: -48px -24px; }
+  #shindig-signup .icon-flag, #shindig-signup-student .icon-flag {
+    background-position: -312px -24px; }
+  #shindig-signup .icon-headphones, #shindig-signup-student .icon-headphones {
+    background-position: -336px -24px; }
+  #shindig-signup .icon-book, #shindig-signup-student .icon-book {
+    background-position: -48px -48px; }
+  #shindig-signup .icon-info-sign, #shindig-signup-student .icon-info-sign {
+    background-position: -120px -96px; }
+  #shindig-signup .icon-calendar, #shindig-signup-student .icon-calendar {
+    background-position: -192px -120px; }
+  #shindig-signup .well, #shindig-signup-student .well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #eee;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); }
+  #shindig-signup .btn, #shindig-signup-student .btn {
+    display: inline-block;
+    padding: 4px 10px;
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 18px;
+    color: #333;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    background-color: #f5f5f5;
+    background-image: linear-gradient(top, white, #e6e6e6);
+    background-repeat: repeat-x;
+    border: 1px solid #ccc;
+    border-bottom-color: #bbb;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    *margin-left: .3em; }
+    #shindig-signup .btn:first-child, #shindig-signup-student .btn:first-child {
+      *margin-left: 0; }
+    #shindig-signup .btn:hover, #shindig-signup-student .btn:hover {
+      color: #333;
+      text-decoration: none;
+      background-color: #e6e6e6;
+      background-position: 0 -15px;
+      transition: background-position .1s linear; }
+    #shindig-signup .btn:focus, #shindig-signup-student .btn:focus {
+      outline: thin dotted #333;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+    #shindig-signup .btn:active, #shindig-signup-student .btn:active {
+      background-image: none;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+      background-color: #e6e6e6;
+      outline: 0; }
+  #shindig-signup .btn-info, #shindig-signup-student .btn-info {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color: #fff; }
+    #shindig-signup .btn-info:hover, #shindig-signup-student .btn-info:hover {
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+      color: #fff; }
+  #shindig-signup .btn-success, #shindig-signup-student .btn-success {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color: #fff;
+    background-color: #5bb75b;
+    background-image: linear-gradient(top, #62c462, #51a351);
+    background-repeat: repeat-x;
+    border-color: #51a351 #51a351 #387038;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
+    #shindig-signup .btn-success:hover, #shindig-signup-student .btn-success:hover {
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+      color: #fff; }
+    #shindig-signup .btn-success:active, #shindig-signup .btn-success:hover, #shindig-signup-student .btn-success:active, #shindig-signup-student .btn-success:hover {
+      background-color: #51a351; }
+  #shindig-signup .btn-info, #shindig-signup-student .btn-info {
+    background-color: #49afcd;
+    background-image: linear-gradient(top, #5bc0de, #2f96b4);
+    background-repeat: repeat-x;
+    border-color: #2f96b4 #2f96b4 #1f6377;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
+    #shindig-signup .btn-info:active, #shindig-signup .btn-info:hover, #shindig-signup-student .btn-info:active, #shindig-signup-student .btn-info:hover {
+      background-color: #2f96b4; }
+  #shindig-signup button.btn, #shindig-signup-student button.btn {
+    *padding-top: 2px;
+    *padding-bottom: 2px; }
+    #shindig-signup button.btn::-moz-focus-inner, #shindig-signup-student button.btn::-moz-focus-inner {
+      padding: 0;
+      border: 0; }
+  #shindig-signup input[type=submit].btn::-moz-focus-inner, #shindig-signup-student input[type=submit].btn::-moz-focus-inner {
+    padding: 0;
+    border: 0; }
+  #shindig-signup .btn-group, #shindig-signup-student .btn-group {
+    position: relative;
+    *zoom: 1;
+    *margin-left: .3em; }
+    #shindig-signup .btn-group:after, #shindig-signup .btn-group:before, #shindig-signup-student .btn-group:after, #shindig-signup-student .btn-group:before {
+      display: table;
+      content: ""; }
+    #shindig-signup .btn-group:after, #shindig-signup-student .btn-group:after {
+      clear: both; }
+    #shindig-signup .btn-group:first-child, #shindig-signup-student .btn-group:first-child {
+      *margin-left: 0; }
+    #shindig-signup .btn-group .btn, #shindig-signup-student .btn-group .btn {
+      position: relative;
+      float: left;
+      margin-left: -1px;
+      border-radius: 0; }
+      #shindig-signup .btn-group .btn:last-child, #shindig-signup-student .btn-group .btn:last-child {
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px; }
+      #shindig-signup .btn-group .btn:active, #shindig-signup .btn-group .btn:focus, #shindig-signup .btn-group .btn:hover, #shindig-signup-student .btn-group .btn:active, #shindig-signup-student .btn-group .btn:focus, #shindig-signup-student .btn-group .btn:hover {
+        z-index: 2; }
+  #shindig-signup .navbar-search .search-query :-moz-placeholder, #shindig-signup-student .navbar-search .search-query :-moz-placeholder {
+    color: #eee; }
+  #shindig-signup .pull-right, #shindig-signup-student .pull-right {
+    float: right; }
+
+.hide {
+  display: none; }
+
+/*!
  * Bootstrap Responsive v2.0.1
  *
  * Copyright 2012 Twitter, Inc
@@ -14,10 +293,685 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- */#shindig-signup .clearfix{*zoom:1}#shindig-signup .clearfix:before{display:table;content:""}#shindig-signup .clearfix:after{display:table;content:"";clear:both}#shindig-signup .hidden{display:none;visibility:hidden}@media (max-width:480px){#shindig-signup .uneditable-input,#shindig-signup input[class*=span],#shindig-signup select[class*=span],#shindig-signup textarea[class*=span]{display:block;width:100%;min-height:28px;-ms-box-sizing:border-box;box-sizing:border-box}#shindig-signup .input-append input[class*=span],#shindig-signup .input-prepend input[class*=span]{width:auto}#shindig-signup input[type=checkbox],#shindig-signup input[type=radio]{border:1px solid #ccc}#shindig-signup.form-horizontal .control-group>label{float:none;width:auto;padding-top:0;text-align:left}#shindig-signup.form-horizontal .controls{margin-left:0}#shindig-signup.form-horizontal .control-list{padding-top:0}#shindig-signup.form-horizontal .form-actions{padding-left:10px;padding-right:10px}}@media (max-width:767px){#shindig-signup .container{width:auto;padding:0 20px}#shindig-signup .row-fluid{width:100%}#shindig-signup .row{margin-left:0}#shindig-signup .row-fluid>[class*=span],#shindig-signup .row>[class*=span]{float:none;display:block;width:auto;margin:0}}@media (min-width:768px) and (max-width:979px){#shindig-signup .row{margin-left:-20px;*zoom:1}#shindig-signup .row:before{display:table;content:""}#shindig-signup .row:after{display:table;content:"";clear:both}#shindig-signup [class*=span]{float:left;margin-left:20px}#shindig-signup .span1{width:42px}#shindig-signup .span2{width:104px}#shindig-signup .span3{width:166px}#shindig-signup .span4{width:228px}#shindig-signup .span5{width:290px}#shindig-signup .span6{width:352px}#shindig-signup .span7{width:414px}#shindig-signup .span8{width:476px}#shindig-signup .span9{width:538px}#shindig-signup .span10{width:600px}#shindig-signup .span11{width:662px}#shindig-signup .container,#shindig-signup .span12{width:724px}#shindig-signup .offset1{margin-left:82px}#shindig-signup .offset2{margin-left:144px}#shindig-signup .offset3{margin-left:206px}#shindig-signup .offset4{margin-left:268px}#shindig-signup .offset5{margin-left:330px}#shindig-signup .offset6{margin-left:392px}#shindig-signup .offset7{margin-left:454px}#shindig-signup .offset8{margin-left:516px}#shindig-signup .offset9{margin-left:578px}#shindig-signup .offset10{margin-left:640px}#shindig-signup .offset11{margin-left:702px}#shindig-signup .row-fluid{width:100%;*zoom:1}#shindig-signup .row-fluid:before{display:table;content:""}#shindig-signup .row-fluid:after{display:table;content:"";clear:both}#shindig-signup .row-fluid>[class*=span]{float:left;margin-left:2.762430939%}#shindig-signup .row-fluid>[class*=span]:first-child{margin-left:0}#shindig-signup .row-fluid>.span1{width:5.801104972%}#shindig-signup .row-fluid>.span2{width:14.364640883%}#shindig-signup .row-fluid>.span3{width:22.928176794%}#shindig-signup .row-fluid>.span4{width:31.491712705%}#shindig-signup .row-fluid>.span5{width:40.055248616%}#shindig-signup .row-fluid>.span6{width:48.618784527%}#shindig-signup .row-fluid>.span7{width:57.182320438000005%}#shindig-signup .row-fluid>.span8{width:65.74585634900001%}#shindig-signup .row-fluid>.span9{width:74.30939226%}#shindig-signup .row-fluid>.span10{width:82.87292817100001%}#shindig-signup .row-fluid>.span11{width:91.436464082%}#shindig-signup .row-fluid>.span12{width:99.999999993%}#shindig-signup .uneditable-input.span1,#shindig-signup input.span1,#shindig-signup textarea.span1{width:32px}#shindig-signup .uneditable-input.span2,#shindig-signup input.span2,#shindig-signup textarea.span2{width:94px}#shindig-signup .uneditable-input.span3,#shindig-signup input.span3,#shindig-signup textarea.span3{width:156px}#shindig-signup .uneditable-input.span4,#shindig-signup input.span4,#shindig-signup textarea.span4{width:218px}#shindig-signup .uneditable-input.span5,#shindig-signup input.span5,#shindig-signup textarea.span5{width:280px}#shindig-signup .uneditable-input.span6,#shindig-signup input.span6,#shindig-signup textarea.span6{width:342px}#shindig-signup .uneditable-input.span7,#shindig-signup input.span7,#shindig-signup textarea.span7{width:404px}#shindig-signup .uneditable-input.span8,#shindig-signup input.span8,#shindig-signup textarea.span8{width:466px}#shindig-signup .uneditable-input.span9,#shindig-signup input.span9,#shindig-signup textarea.span9{width:528px}#shindig-signup .uneditable-input.span10,#shindig-signup input.span10,#shindig-signup textarea.span10{width:590px}#shindig-signup .uneditable-input.span11,#shindig-signup input.span11,#shindig-signup textarea.span11{width:652px}#shindig-signup .uneditable-input.span12,#shindig-signup input.span12,#shindig-signup textarea.span12{width:714px}}@media (min-width:1200px){#shindig-signup .row{margin-left:-30px;*zoom:1}#shindig-signup .row:before{display:table;content:""}#shindig-signup .row:after{display:table;content:"";clear:both}#shindig-signup [class*=span]{float:left;margin-left:30px}#shindig-signup .span1{width:70px}#shindig-signup .span2{width:170px}#shindig-signup .span3{width:270px}#shindig-signup .span4{width:370px}#shindig-signup .span5{width:470px}#shindig-signup .span6{width:570px}#shindig-signup .span7{width:670px}#shindig-signup .span8{width:770px}#shindig-signup .span9{width:870px}#shindig-signup .span10{width:970px}#shindig-signup .span11{width:1070px}#shindig-signup .container,#shindig-signup .span12{width:1170px}#shindig-signup .offset1{margin-left:130px}#shindig-signup .offset2{margin-left:230px}#shindig-signup .offset3{margin-left:330px}#shindig-signup .offset4{margin-left:430px}#shindig-signup .offset5{margin-left:530px}#shindig-signup .offset6{margin-left:630px}#shindig-signup .offset7{margin-left:730px}#shindig-signup .offset8{margin-left:830px}#shindig-signup .offset9{margin-left:930px}#shindig-signup .offset10{margin-left:1030px}#shindig-signup .offset11{margin-left:1130px}#shindig-signup .row-fluid{width:100%;*zoom:1}#shindig-signup .row-fluid:before{display:table;content:""}#shindig-signup .row-fluid:after{display:table;content:"";clear:both}#shindig-signup .row-fluid>[class*=span]{float:left;margin-left:2.564102564%}#shindig-signup .row-fluid>[class*=span]:first-child{margin-left:0}#shindig-signup .row-fluid>.span1{width:5.982905983%}#shindig-signup .row-fluid>.span2{width:14.529914530000001%}#shindig-signup .row-fluid>.span3{width:23.076923077%}#shindig-signup .row-fluid>.span4{width:31.623931624%}#shindig-signup .row-fluid>.span5{width:40.170940171000005%}#shindig-signup .row-fluid>.span6{width:48.717948718%}#shindig-signup .row-fluid>.span7{width:57.264957265%}#shindig-signup .row-fluid>.span8{width:65.81196581200001%}#shindig-signup .row-fluid>.span9{width:74.358974359%}#shindig-signup .row-fluid>.span10{width:82.905982906%}#shindig-signup .row-fluid>.span11{width:91.45299145300001%}#shindig-signup .row-fluid>.span12{width:100%}#shindig-signup .uneditable-input.span1,#shindig-signup input.span1,#shindig-signup textarea.span1{width:60px}#shindig-signup .uneditable-input.span2,#shindig-signup input.span2,#shindig-signup textarea.span2{width:160px}#shindig-signup .uneditable-input.span3,#shindig-signup input.span3,#shindig-signup textarea.span3{width:260px}#shindig-signup .uneditable-input.span4,#shindig-signup input.span4,#shindig-signup textarea.span4{width:360px}#shindig-signup .uneditable-input.span5,#shindig-signup input.span5,#shindig-signup textarea.span5{width:460px}#shindig-signup .uneditable-input.span6,#shindig-signup input.span6,#shindig-signup textarea.span6{width:560px}#shindig-signup .uneditable-input.span7,#shindig-signup input.span7,#shindig-signup textarea.span7{width:660px}#shindig-signup .uneditable-input.span8,#shindig-signup input.span8,#shindig-signup textarea.span8{width:760px}#shindig-signup .uneditable-input.span9,#shindig-signup input.span9,#shindig-signup textarea.span9{width:860px}#shindig-signup .uneditable-input.span10,#shindig-signup input.span10,#shindig-signup textarea.span10{width:960px}#shindig-signup .uneditable-input.span11,#shindig-signup input.span11,#shindig-signup textarea.span11{width:1060px}#shindig-signup .uneditable-input.span12,#shindig-signup input.span12,#shindig-signup textarea.span12{width:1160px}#shindig-signup .thumbnails{margin-left:-30px}#shindig-signup .thumbnails>li{margin-left:30px}}/*!
+ */
+#shindig-signup .clearfix, #shindig-signup-student .clearfix {
+  *zoom: 1; }
+  #shindig-signup .clearfix:before, #shindig-signup-student .clearfix:before {
+    display: table;
+    content: ""; }
+  #shindig-signup .clearfix:after, #shindig-signup-student .clearfix:after {
+    display: table;
+    content: "";
+    clear: both; }
+#shindig-signup .hidden, #shindig-signup-student .hidden {
+  display: none;
+  visibility: hidden; }
+
+@media (max-width: 480px) {
+  #shindig-signup input[class*="span"], #shindig-signup select[class*="span"], #shindig-signup textarea[class*="span"], #shindig-signup .uneditable-input, #shindig-signup-student input[class*="span"], #shindig-signup-student select[class*="span"], #shindig-signup-student textarea[class*="span"], #shindig-signup-student .uneditable-input {
+    display: block;
+    width: 100%;
+    min-height: 28px;
+    /* Make inputs at least the height of their button counterpart */
+    /* Makes inputs behave like true block-level elements */
+    /* Older Webkit */
+    /* Older FF */
+    -ms-box-sizing: border-box;
+    /* IE8 */
+    box-sizing: border-box;
+    /* CSS3 spec*/ }
+  #shindig-signup .input-prepend input[class*="span"], #shindig-signup .input-append input[class*="span"], #shindig-signup-student .input-prepend input[class*="span"], #shindig-signup-student .input-append input[class*="span"] {
+    width: auto; }
+  #shindig-signup input[type="checkbox"], #shindig-signup input[type="radio"], #shindig-signup-student input[type="checkbox"], #shindig-signup-student input[type="radio"] {
+    border: 1px solid #ccc; }
+  #shindig-signup.form-horizontal .control-group > label, #shindig-signup-student.form-horizontal .control-group > label {
+    float: none;
+    width: auto;
+    padding-top: 0;
+    text-align: left; }
+  #shindig-signup.form-horizontal .controls, #shindig-signup-student.form-horizontal .controls {
+    margin-left: 0; }
+  #shindig-signup.form-horizontal .control-list, #shindig-signup-student.form-horizontal .control-list {
+    padding-top: 0; }
+  #shindig-signup.form-horizontal .form-actions, #shindig-signup-student.form-horizontal .form-actions {
+    padding-left: 10px;
+    padding-right: 10px; } }
+@media (max-width: 767px) {
+  #shindig-signup .container, #shindig-signup-student .container {
+    width: auto;
+    padding: 0 20px; }
+  #shindig-signup .row-fluid, #shindig-signup-student .row-fluid {
+    width: 100%; }
+  #shindig-signup .row, #shindig-signup-student .row {
+    margin-left: 0; }
+    #shindig-signup .row > [class*="span"], #shindig-signup-student .row > [class*="span"] {
+      float: none;
+      display: block;
+      width: auto;
+      margin: 0; }
+  #shindig-signup .row-fluid > [class*="span"], #shindig-signup-student .row-fluid > [class*="span"] {
+    float: none;
+    display: block;
+    width: auto;
+    margin: 0; } }
+@media (min-width: 768px) and (max-width: 979px) {
+  #shindig-signup .row, #shindig-signup-student .row {
+    margin-left: -20px;
+    *zoom: 1; }
+    #shindig-signup .row:before, #shindig-signup-student .row:before {
+      display: table;
+      content: ""; }
+    #shindig-signup .row:after, #shindig-signup-student .row:after {
+      display: table;
+      content: "";
+      clear: both; }
+  #shindig-signup [class*="span"], #shindig-signup-student [class*="span"] {
+    float: left;
+    margin-left: 20px; }
+  #shindig-signup .span1, #shindig-signup-student .span1 {
+    width: 42px; }
+  #shindig-signup .span2, #shindig-signup-student .span2 {
+    width: 104px; }
+  #shindig-signup .span3, #shindig-signup-student .span3 {
+    width: 166px; }
+  #shindig-signup .span4, #shindig-signup-student .span4 {
+    width: 228px; }
+  #shindig-signup .span5, #shindig-signup-student .span5 {
+    width: 290px; }
+  #shindig-signup .span6, #shindig-signup-student .span6 {
+    width: 352px; }
+  #shindig-signup .span7, #shindig-signup-student .span7 {
+    width: 414px; }
+  #shindig-signup .span8, #shindig-signup-student .span8 {
+    width: 476px; }
+  #shindig-signup .span9, #shindig-signup-student .span9 {
+    width: 538px; }
+  #shindig-signup .span10, #shindig-signup-student .span10 {
+    width: 600px; }
+  #shindig-signup .span11, #shindig-signup-student .span11 {
+    width: 662px; }
+  #shindig-signup .span12, #shindig-signup .container, #shindig-signup-student .span12, #shindig-signup-student .container {
+    width: 724px; }
+  #shindig-signup .offset1, #shindig-signup-student .offset1 {
+    margin-left: 82px; }
+  #shindig-signup .offset2, #shindig-signup-student .offset2 {
+    margin-left: 144px; }
+  #shindig-signup .offset3, #shindig-signup-student .offset3 {
+    margin-left: 206px; }
+  #shindig-signup .offset4, #shindig-signup-student .offset4 {
+    margin-left: 268px; }
+  #shindig-signup .offset5, #shindig-signup-student .offset5 {
+    margin-left: 330px; }
+  #shindig-signup .offset6, #shindig-signup-student .offset6 {
+    margin-left: 392px; }
+  #shindig-signup .offset7, #shindig-signup-student .offset7 {
+    margin-left: 454px; }
+  #shindig-signup .offset8, #shindig-signup-student .offset8 {
+    margin-left: 516px; }
+  #shindig-signup .offset9, #shindig-signup-student .offset9 {
+    margin-left: 578px; }
+  #shindig-signup .offset10, #shindig-signup-student .offset10 {
+    margin-left: 640px; }
+  #shindig-signup .offset11, #shindig-signup-student .offset11 {
+    margin-left: 702px; }
+  #shindig-signup .row-fluid, #shindig-signup-student .row-fluid {
+    width: 100%;
+    *zoom: 1; }
+    #shindig-signup .row-fluid:before, #shindig-signup-student .row-fluid:before {
+      display: table;
+      content: ""; }
+    #shindig-signup .row-fluid:after, #shindig-signup-student .row-fluid:after {
+      display: table;
+      content: "";
+      clear: both; }
+    #shindig-signup .row-fluid > [class*="span"], #shindig-signup-student .row-fluid > [class*="span"] {
+      float: left;
+      margin-left: 2.762430939%; }
+      #shindig-signup .row-fluid > [class*="span"]:first-child, #shindig-signup-student .row-fluid > [class*="span"]:first-child {
+        margin-left: 0; }
+    #shindig-signup .row-fluid > .span1, #shindig-signup-student .row-fluid > .span1 {
+      width: 5.801104972%; }
+    #shindig-signup .row-fluid > .span2, #shindig-signup-student .row-fluid > .span2 {
+      width: 14.364640883%; }
+    #shindig-signup .row-fluid > .span3, #shindig-signup-student .row-fluid > .span3 {
+      width: 22.928176794%; }
+    #shindig-signup .row-fluid > .span4, #shindig-signup-student .row-fluid > .span4 {
+      width: 31.491712705%; }
+    #shindig-signup .row-fluid > .span5, #shindig-signup-student .row-fluid > .span5 {
+      width: 40.055248616%; }
+    #shindig-signup .row-fluid > .span6, #shindig-signup-student .row-fluid > .span6 {
+      width: 48.618784527%; }
+    #shindig-signup .row-fluid > .span7, #shindig-signup-student .row-fluid > .span7 {
+      width: 57.182320438000005%; }
+    #shindig-signup .row-fluid > .span8, #shindig-signup-student .row-fluid > .span8 {
+      width: 65.74585634900001%; }
+    #shindig-signup .row-fluid > .span9, #shindig-signup-student .row-fluid > .span9 {
+      width: 74.30939226%; }
+    #shindig-signup .row-fluid > .span10, #shindig-signup-student .row-fluid > .span10 {
+      width: 82.87292817100001%; }
+    #shindig-signup .row-fluid > .span11, #shindig-signup-student .row-fluid > .span11 {
+      width: 91.436464082%; }
+    #shindig-signup .row-fluid > .span12, #shindig-signup-student .row-fluid > .span12 {
+      width: 99.999999993%; }
+  #shindig-signup input.span1, #shindig-signup textarea.span1, #shindig-signup .uneditable-input.span1, #shindig-signup-student input.span1, #shindig-signup-student textarea.span1, #shindig-signup-student .uneditable-input.span1 {
+    width: 32px; }
+  #shindig-signup input.span2, #shindig-signup textarea.span2, #shindig-signup .uneditable-input.span2, #shindig-signup-student input.span2, #shindig-signup-student textarea.span2, #shindig-signup-student .uneditable-input.span2 {
+    width: 94px; }
+  #shindig-signup input.span3, #shindig-signup textarea.span3, #shindig-signup .uneditable-input.span3, #shindig-signup-student input.span3, #shindig-signup-student textarea.span3, #shindig-signup-student .uneditable-input.span3 {
+    width: 156px; }
+  #shindig-signup input.span4, #shindig-signup textarea.span4, #shindig-signup .uneditable-input.span4, #shindig-signup-student input.span4, #shindig-signup-student textarea.span4, #shindig-signup-student .uneditable-input.span4 {
+    width: 218px; }
+  #shindig-signup input.span5, #shindig-signup textarea.span5, #shindig-signup .uneditable-input.span5, #shindig-signup-student input.span5, #shindig-signup-student textarea.span5, #shindig-signup-student .uneditable-input.span5 {
+    width: 280px; }
+  #shindig-signup input.span6, #shindig-signup textarea.span6, #shindig-signup .uneditable-input.span6, #shindig-signup-student input.span6, #shindig-signup-student textarea.span6, #shindig-signup-student .uneditable-input.span6 {
+    width: 342px; }
+  #shindig-signup input.span7, #shindig-signup textarea.span7, #shindig-signup .uneditable-input.span7, #shindig-signup-student input.span7, #shindig-signup-student textarea.span7, #shindig-signup-student .uneditable-input.span7 {
+    width: 404px; }
+  #shindig-signup input.span8, #shindig-signup textarea.span8, #shindig-signup .uneditable-input.span8, #shindig-signup-student input.span8, #shindig-signup-student textarea.span8, #shindig-signup-student .uneditable-input.span8 {
+    width: 466px; }
+  #shindig-signup input.span9, #shindig-signup textarea.span9, #shindig-signup .uneditable-input.span9, #shindig-signup-student input.span9, #shindig-signup-student textarea.span9, #shindig-signup-student .uneditable-input.span9 {
+    width: 528px; }
+  #shindig-signup input.span10, #shindig-signup textarea.span10, #shindig-signup .uneditable-input.span10, #shindig-signup-student input.span10, #shindig-signup-student textarea.span10, #shindig-signup-student .uneditable-input.span10 {
+    width: 590px; }
+  #shindig-signup input.span11, #shindig-signup textarea.span11, #shindig-signup .uneditable-input.span11, #shindig-signup-student input.span11, #shindig-signup-student textarea.span11, #shindig-signup-student .uneditable-input.span11 {
+    width: 652px; }
+  #shindig-signup input.span12, #shindig-signup textarea.span12, #shindig-signup .uneditable-input.span12, #shindig-signup-student input.span12, #shindig-signup-student textarea.span12, #shindig-signup-student .uneditable-input.span12 {
+    width: 714px; } }
+@media (min-width: 1200px) {
+  #shindig-signup .row, #shindig-signup-student .row {
+    margin-left: -30px;
+    *zoom: 1; }
+    #shindig-signup .row:before, #shindig-signup-student .row:before {
+      display: table;
+      content: ""; }
+    #shindig-signup .row:after, #shindig-signup-student .row:after {
+      display: table;
+      content: "";
+      clear: both; }
+  #shindig-signup [class*="span"], #shindig-signup-student [class*="span"] {
+    float: left;
+    margin-left: 30px; }
+  #shindig-signup .span1, #shindig-signup-student .span1 {
+    width: 70px; }
+  #shindig-signup .span2, #shindig-signup-student .span2 {
+    width: 170px; }
+  #shindig-signup .span3, #shindig-signup-student .span3 {
+    width: 270px; }
+  #shindig-signup .span4, #shindig-signup-student .span4 {
+    width: 370px; }
+  #shindig-signup .span5, #shindig-signup-student .span5 {
+    width: 470px; }
+  #shindig-signup .span6, #shindig-signup-student .span6 {
+    width: 570px; }
+  #shindig-signup .span7, #shindig-signup-student .span7 {
+    width: 670px; }
+  #shindig-signup .span8, #shindig-signup-student .span8 {
+    width: 770px; }
+  #shindig-signup .span9, #shindig-signup-student .span9 {
+    width: 870px; }
+  #shindig-signup .span10, #shindig-signup-student .span10 {
+    width: 970px; }
+  #shindig-signup .span11, #shindig-signup-student .span11 {
+    width: 1070px; }
+  #shindig-signup .span12, #shindig-signup .container, #shindig-signup-student .span12, #shindig-signup-student .container {
+    width: 1170px; }
+  #shindig-signup .offset1, #shindig-signup-student .offset1 {
+    margin-left: 130px; }
+  #shindig-signup .offset2, #shindig-signup-student .offset2 {
+    margin-left: 230px; }
+  #shindig-signup .offset3, #shindig-signup-student .offset3 {
+    margin-left: 330px; }
+  #shindig-signup .offset4, #shindig-signup-student .offset4 {
+    margin-left: 430px; }
+  #shindig-signup .offset5, #shindig-signup-student .offset5 {
+    margin-left: 530px; }
+  #shindig-signup .offset6, #shindig-signup-student .offset6 {
+    margin-left: 630px; }
+  #shindig-signup .offset7, #shindig-signup-student .offset7 {
+    margin-left: 730px; }
+  #shindig-signup .offset8, #shindig-signup-student .offset8 {
+    margin-left: 830px; }
+  #shindig-signup .offset9, #shindig-signup-student .offset9 {
+    margin-left: 930px; }
+  #shindig-signup .offset10, #shindig-signup-student .offset10 {
+    margin-left: 1030px; }
+  #shindig-signup .offset11, #shindig-signup-student .offset11 {
+    margin-left: 1130px; }
+  #shindig-signup .row-fluid, #shindig-signup-student .row-fluid {
+    width: 100%;
+    *zoom: 1; }
+    #shindig-signup .row-fluid:before, #shindig-signup-student .row-fluid:before {
+      display: table;
+      content: ""; }
+    #shindig-signup .row-fluid:after, #shindig-signup-student .row-fluid:after {
+      display: table;
+      content: "";
+      clear: both; }
+    #shindig-signup .row-fluid > [class*="span"], #shindig-signup-student .row-fluid > [class*="span"] {
+      float: left;
+      margin-left: 2.564102564%; }
+      #shindig-signup .row-fluid > [class*="span"]:first-child, #shindig-signup-student .row-fluid > [class*="span"]:first-child {
+        margin-left: 0; }
+    #shindig-signup .row-fluid > .span1, #shindig-signup-student .row-fluid > .span1 {
+      width: 5.982905983%; }
+    #shindig-signup .row-fluid > .span2, #shindig-signup-student .row-fluid > .span2 {
+      width: 14.529914530000001%; }
+    #shindig-signup .row-fluid > .span3, #shindig-signup-student .row-fluid > .span3 {
+      width: 23.076923077%; }
+    #shindig-signup .row-fluid > .span4, #shindig-signup-student .row-fluid > .span4 {
+      width: 31.623931624%; }
+    #shindig-signup .row-fluid > .span5, #shindig-signup-student .row-fluid > .span5 {
+      width: 40.170940171000005%; }
+    #shindig-signup .row-fluid > .span6, #shindig-signup-student .row-fluid > .span6 {
+      width: 48.717948718%; }
+    #shindig-signup .row-fluid > .span7, #shindig-signup-student .row-fluid > .span7 {
+      width: 57.264957265%; }
+    #shindig-signup .row-fluid > .span8, #shindig-signup-student .row-fluid > .span8 {
+      width: 65.81196581200001%; }
+    #shindig-signup .row-fluid > .span9, #shindig-signup-student .row-fluid > .span9 {
+      width: 74.358974359%; }
+    #shindig-signup .row-fluid > .span10, #shindig-signup-student .row-fluid > .span10 {
+      width: 82.905982906%; }
+    #shindig-signup .row-fluid > .span11, #shindig-signup-student .row-fluid > .span11 {
+      width: 91.45299145300001%; }
+    #shindig-signup .row-fluid > .span12, #shindig-signup-student .row-fluid > .span12 {
+      width: 100%; }
+  #shindig-signup input.span1, #shindig-signup textarea.span1, #shindig-signup .uneditable-input.span1, #shindig-signup-student input.span1, #shindig-signup-student textarea.span1, #shindig-signup-student .uneditable-input.span1 {
+    width: 60px; }
+  #shindig-signup input.span2, #shindig-signup textarea.span2, #shindig-signup .uneditable-input.span2, #shindig-signup-student input.span2, #shindig-signup-student textarea.span2, #shindig-signup-student .uneditable-input.span2 {
+    width: 160px; }
+  #shindig-signup input.span3, #shindig-signup textarea.span3, #shindig-signup .uneditable-input.span3, #shindig-signup-student input.span3, #shindig-signup-student textarea.span3, #shindig-signup-student .uneditable-input.span3 {
+    width: 260px; }
+  #shindig-signup input.span4, #shindig-signup textarea.span4, #shindig-signup .uneditable-input.span4, #shindig-signup-student input.span4, #shindig-signup-student textarea.span4, #shindig-signup-student .uneditable-input.span4 {
+    width: 360px; }
+  #shindig-signup input.span5, #shindig-signup textarea.span5, #shindig-signup .uneditable-input.span5, #shindig-signup-student input.span5, #shindig-signup-student textarea.span5, #shindig-signup-student .uneditable-input.span5 {
+    width: 460px; }
+  #shindig-signup input.span6, #shindig-signup textarea.span6, #shindig-signup .uneditable-input.span6, #shindig-signup-student input.span6, #shindig-signup-student textarea.span6, #shindig-signup-student .uneditable-input.span6 {
+    width: 560px; }
+  #shindig-signup input.span7, #shindig-signup textarea.span7, #shindig-signup .uneditable-input.span7, #shindig-signup-student input.span7, #shindig-signup-student textarea.span7, #shindig-signup-student .uneditable-input.span7 {
+    width: 660px; }
+  #shindig-signup input.span8, #shindig-signup textarea.span8, #shindig-signup .uneditable-input.span8, #shindig-signup-student input.span8, #shindig-signup-student textarea.span8, #shindig-signup-student .uneditable-input.span8 {
+    width: 760px; }
+  #shindig-signup input.span9, #shindig-signup textarea.span9, #shindig-signup .uneditable-input.span9, #shindig-signup-student input.span9, #shindig-signup-student textarea.span9, #shindig-signup-student .uneditable-input.span9 {
+    width: 860px; }
+  #shindig-signup input.span10, #shindig-signup textarea.span10, #shindig-signup .uneditable-input.span10, #shindig-signup-student input.span10, #shindig-signup-student textarea.span10, #shindig-signup-student .uneditable-input.span10 {
+    width: 960px; }
+  #shindig-signup input.span11, #shindig-signup textarea.span11, #shindig-signup .uneditable-input.span11, #shindig-signup-student input.span11, #shindig-signup-student textarea.span11, #shindig-signup-student .uneditable-input.span11 {
+    width: 1060px; }
+  #shindig-signup input.span12, #shindig-signup textarea.span12, #shindig-signup .uneditable-input.span12, #shindig-signup-student input.span12, #shindig-signup-student textarea.span12, #shindig-signup-student .uneditable-input.span12 {
+    width: 1160px; }
+  #shindig-signup .thumbnails, #shindig-signup-student .thumbnails {
+    margin-left: -30px; }
+    #shindig-signup .thumbnails > li, #shindig-signup-student .thumbnails > li {
+      margin-left: 30px; } }
+/*!
  * Shindig Widget Layout
- */#shindig-signup [class*=" icon-"]:before,#shindig-signup [class^=icon-]:before{content:""}#shindig-signup .well{padding:15px;margin-bottom:0}#shindig-signup .form-horizontal .control-label{width:145px}#shindig-signup .control-group.required .control-label:after{content:"*";color:red}#shindig-signup .days-of-week-error{color:red}#shindig-signup .contact-info{color:#fff}#shindig-signup .contact-info a{text-decoration:none;color:#fff}#shindig-signup .centered{display:block;margin-left:auto;margin-right:auto;text-align:center}#shindig-signup .vcenter{display:inline-block;vertical-align:middle;float:none}#shindig-signup input[data-toggle]:checked+label,#shindig-signup input[data-toggle]:checked+label:active{background-color:#04C;color:#FFF;background-image:none;box-shadow:0 2px 4px rgba(0,0,0,.15)inset,0 1px 2px rgba(0,0,0,.05);outline:0 none}#shindig-signup .btn-group>.btn:first-of-type{border-bottom-left-radius:4px;border-top-left-radius:4px;margin-left:0}#shindig-signup :not(label) input[type=checkbox],#shindig-signup :not(label) input[type=radio]{opacity:0;position:absolute;visibility:hidden}#shindig-signup textarea.input-xlarge{width:297px}#shindig-signup input[type=date]::-webkit-inner-spin-button,#shindig-signup input[type=date]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}#shindig-signup input[type=date],#shindig-signup input[type=time]{width:124px}#shindig-signup input[type=date]~span.add-on,#shindig-signup input[type=time]~span.add-on{height:20px!important}@media screen and (max-width:536px){#shindig-signup .controls.day-of-week,#shindig-signup .controls.event-type{zoom:.88}#shindig-signup textarea.input-xlarge{width:242px}#shindig-signup .input-xlarge{width:215px}#shindig-signup #enddate,#shindig-signup #endtime{margin-left:27px}}@media screen and (max-width:480px){#shindig-signup #enddate,#shindig-signup #endtime{margin-left:0}}@media screen and (max-width:376px){#shindig-signup .controls.day-of-week,#shindig-signup .controls.event-type{zoom:.84}#shindig-signup #enddate,#shindig-signup #endtime{margin-left:27px}}/*!
+ */
+#shindig-signup, #shindig-signup-student {
+  /*
+   * Bootleg.css
+   * https://github.com/ryanseddon/bootleg
+   *
+   * WTFPL - http://sam.zoy.org/wtfpl/
+   */
+  /* Toggle buttons */
+  /* Button groups */
+  /* Bootstrap checkboxex/radios appear within labels and we don't want to hide them */ }
+  #shindig-signup [class^="icon-"]:before, #shindig-signup [class*=" icon-"]:before, #shindig-signup-student [class^="icon-"]:before, #shindig-signup-student [class*=" icon-"]:before {
+    content: ""; }
+  #shindig-signup .well, #shindig-signup-student .well {
+    padding: 15px;
+    margin-bottom: 0px; }
+  #shindig-signup .form-horizontal .control-label, #shindig-signup-student .form-horizontal .control-label {
+    width: 145px; }
+  #shindig-signup .control-group.required .control-label:after, #shindig-signup-student .control-group.required .control-label:after {
+    content: "*";
+    color: red; }
+  #shindig-signup .days-of-week-error, #shindig-signup-student .days-of-week-error {
+    color: red; }
+  #shindig-signup .contact-info, #shindig-signup-student .contact-info {
+    color: white; }
+    #shindig-signup .contact-info a, #shindig-signup-student .contact-info a {
+      text-decoration: none;
+      color: white; }
+  #shindig-signup .centered, #shindig-signup-student .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+  #shindig-signup .vcenter, #shindig-signup-student .vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none; }
+  #shindig-signup input[data-toggle]:checked + label,
+  #shindig-signup input[data-toggle]:checked + label:active, #shindig-signup-student input[data-toggle]:checked + label,
+  #shindig-signup-student input[data-toggle]:checked + label:active {
+    background-color: #0044CC;
+    color: #FFFFFF;
+    background-image: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    outline: 0 none; }
+  #shindig-signup .btn-group > .btn:first-of-type, #shindig-signup-student .btn-group > .btn:first-of-type {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    margin-left: 0; }
+  #shindig-signup :not(label) input[type="checkbox"],
+  #shindig-signup :not(label) input[type="radio"], #shindig-signup-student :not(label) input[type="checkbox"],
+  #shindig-signup-student :not(label) input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    /* Opera stills show an outline if not hidden */
+    visibility: hidden; }
+  #shindig-signup textarea.input-xlarge, #shindig-signup-student textarea.input-xlarge {
+    width: 297px; }
+  #shindig-signup input[type=date]::-webkit-inner-spin-button,
+  #shindig-signup input[type=date]::-webkit-outer-spin-button, #shindig-signup-student input[type=date]::-webkit-inner-spin-button,
+  #shindig-signup-student input[type=date]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+  #shindig-signup input[type=date], #shindig-signup input[type=time], #shindig-signup-student input[type=date], #shindig-signup-student input[type=time] {
+    width: 124px; }
+  #shindig-signup input[type=date] ~ span.add-on, #shindig-signup input[type=time] ~ span.add-on, #shindig-signup-student input[type=date] ~ span.add-on, #shindig-signup-student input[type=time] ~ span.add-on {
+    height: 20px !important; }
+
+@media screen and (max-width: 536px) {
+  #shindig-signup .controls.day-of-week, #shindig-signup .controls.event-type, #shindig-signup-student .controls.day-of-week, #shindig-signup-student .controls.event-type {
+    zoom: .88; }
+  #shindig-signup textarea.input-xlarge, #shindig-signup-student textarea.input-xlarge {
+    width: 242px; }
+  #shindig-signup .input-xlarge, #shindig-signup-student .input-xlarge {
+    width: 215px; }
+  #shindig-signup #enddate, #shindig-signup #endtime, #shindig-signup-student #enddate, #shindig-signup-student #endtime {
+    margin-left: 27px; } }
+@media screen and (max-width: 480px) {
+  #shindig-signup #enddate, #shindig-signup #endtime, #shindig-signup-student #enddate, #shindig-signup-student #endtime {
+    margin-left: 0px; } }
+@media screen and (max-width: 376px) {
+  #shindig-signup .controls.day-of-week, #shindig-signup .controls.event-type, #shindig-signup-student .controls.day-of-week, #shindig-signup-student .controls.event-type {
+    zoom: .84; }
+  #shindig-signup #enddate, #shindig-signup #endtime, #shindig-signup-student #enddate, #shindig-signup-student #endtime {
+    margin-left: 27px; } }
+/*!
  * CSS Only Tabs
- */#shindig-signup .tab-container ul{list-style-type:none;margin:0;padding:0}#shindig-signup .tab-container input[type=radio]{position:absolute;left:-9999px;top:-9999px}#shindig-signup .tab-container .tabs{position:relative;z-index:999;white-space:nowrap;font-size:0}#shindig-signup .tab-container .tabs label{display:inline-block;vertical-align:bottom;margin-right:4px;margin-bottom:-1px;margin-left:-1px;background:#EEE;padding:12px 24px;border:solid 1px #DDD;border-radius:5px 5px 0 0;cursor:pointer;background-color:#EEE;text-transform:uppercase;font-size:11px;letter-spacing:1px;box-shadow:0 -1px 6px rgba(0,0,0,.1)inset;color:#666}#shindig-signup .tab-container .tabs label:first-child{margin-left:0}#shindig-signup .tab-container .tabs label:hover{background-color:#DDD}#shindig-signup .tab-container input:nth-child(1):checked~.tabs label:nth-child(1),#shindig-signup .tab-container input:nth-child(2):checked~.tabs label:nth-child(2),#shindig-signup .tab-container input:nth-child(3):checked~.tabs label:nth-child(3),#shindig-signup .tab-container input:nth-child(4):checked~.tabs label:nth-child(4){padding:14px 24px;border-bottom-color:#FFF;background:#FFF;box-shadow:none;color:#000}#shindig-signup .tab-container .sections li{display:none;padding:1em;border:solid 1px #DDD;border-radius:0 5px 5px;background-color:#FFF;box-shadow:1px 1px 20px rgba(0,0,0,.4)}#shindig-signup .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked~div:nth-of-type(3)>div:nth-of-type(2),#shindig-signup .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked~div:nth-of-type(3)>label:nth-of-type(2){visibility:hidden}#shindig-signup .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked~div:nth-of-type(3)>div:nth-of-type(1) label:nth-of-type(1){background-color:#04C;color:#FFF;background-image:none;box-shadow:0 2px 4px rgba(0,0,0,.15)inset,0 1px 2px rgba(0,0,0,.05);outline:0 none}#shindig-signup .tab-container .sections li:nth-child(2) .well input:nth-child(1)~div:nth-of-type(4) .event-date:before{content:"Beginning"}#shindig-signup .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked~div:nth-of-type(4)>div:nth-of-type(1)>div input:nth-of-type(2),#shindig-signup .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked~div:nth-of-type(4)>div:nth-of-type(1)>div span:nth-of-type(1){visibility:hidden}#shindig-signup .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked~div:nth-of-type(4) .event-date:before{content:"On"}#shindig-signup .tab-container input:nth-child(1):checked~.sections li:nth-child(1),#shindig-signup .tab-container input:nth-child(2):checked~.sections li:nth-child(2),#shindig-signup .tab-container input:nth-child(3):checked~.sections li:nth-child(3),#shindig-signup .tab-container input:nth-child(4):checked~.sections li:nth-child(4){display:block}#shindig-signup .tab-container .black-radial-gradient{background-image:radial-gradient(circle farthest-corner at center,#fff 0,#585859 50%,#272829 75%,#202121 87.5%,#000 100%)}/*!
+ */
+#shindig-signup .tab-container ul, #shindig-signup-student .tab-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+#shindig-signup .tab-container input[type=radio], #shindig-signup-student .tab-container input[type=radio] {
+  position: absolute;
+  left: -9999px;
+  top: -9999px; }
+#shindig-signup .tab-container .tabs, #shindig-signup-student .tab-container .tabs {
+  position: relative;
+  z-index: 999;
+  white-space: nowrap;
+  font-size: 0; }
+  #shindig-signup .tab-container .tabs label, #shindig-signup-student .tab-container .tabs label {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 4px;
+    margin-bottom: -1px;
+    margin-left: -1px;
+    background: #EEE;
+    padding: 12px 24px;
+    border: solid 1px #DDD;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    background-color: #EEE;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+    box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.1) inset;
+    color: #666; }
+  #shindig-signup .tab-container .tabs label:first-child, #shindig-signup-student .tab-container .tabs label:first-child {
+    margin-left: 0; }
+  #shindig-signup .tab-container .tabs label:hover, #shindig-signup-student .tab-container .tabs label:hover {
+    background-color: #DDD; }
+#shindig-signup .tab-container input:nth-child(1):checked ~ .tabs label:nth-child(1),
+#shindig-signup .tab-container input:nth-child(2):checked ~ .tabs label:nth-child(2),
+#shindig-signup .tab-container input:nth-child(3):checked ~ .tabs label:nth-child(3),
+#shindig-signup .tab-container input:nth-child(4):checked ~ .tabs label:nth-child(4), #shindig-signup-student .tab-container input:nth-child(1):checked ~ .tabs label:nth-child(1),
+#shindig-signup-student .tab-container input:nth-child(2):checked ~ .tabs label:nth-child(2),
+#shindig-signup-student .tab-container input:nth-child(3):checked ~ .tabs label:nth-child(3),
+#shindig-signup-student .tab-container input:nth-child(4):checked ~ .tabs label:nth-child(4) {
+  padding: 14px 24px;
+  border-bottom-color: #FFF;
+  background: #FFF;
+  box-shadow: none;
+  color: #000; }
+#shindig-signup .tab-container .sections li, #shindig-signup-student .tab-container .sections li {
+  display: none;
+  padding: 1em;
+  border: solid 1px #DDD;
+  border-radius: 0 5px 5px 5px;
+  background-color: #FFF;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4); }
+#shindig-signup .tab-container .sections li:nth-child(2) .well, #shindig-signup-student .tab-container .sections li:nth-child(2) .well {
+  /* One Time Event Selected */
+  /* Recurring Event Selected */
+  /* One Time Event Selected */ }
+  #shindig-signup .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked ~ div:nth-of-type(3), #shindig-signup-student .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked ~ div:nth-of-type(3) {
+    /* Hide day of week picker and it's label */ }
+    #shindig-signup .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked ~ div:nth-of-type(3) > div:nth-of-type(2), #shindig-signup-student .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked ~ div:nth-of-type(3) > div:nth-of-type(2) {
+      visibility: hidden; }
+    #shindig-signup .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked ~ div:nth-of-type(3) > label:nth-of-type(2), #shindig-signup-student .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked ~ div:nth-of-type(3) > label:nth-of-type(2) {
+      visibility: hidden; }
+    #shindig-signup .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked ~ div:nth-of-type(3) > div:nth-of-type(1) label:nth-of-type(1), #shindig-signup-student .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked ~ div:nth-of-type(3) > div:nth-of-type(1) label:nth-of-type(1) {
+      background-color: #0044CC;
+      color: #FFFFFF;
+      background-image: none;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+      outline: 0 none; }
+  #shindig-signup .tab-container .sections li:nth-child(2) .well input:nth-child(1) ~ div:nth-of-type(4), #shindig-signup-student .tab-container .sections li:nth-child(2) .well input:nth-child(1) ~ div:nth-of-type(4) {
+    /* Set Date Label to Beginning */ }
+    #shindig-signup .tab-container .sections li:nth-child(2) .well input:nth-child(1) ~ div:nth-of-type(4) .event-date:before, #shindig-signup-student .tab-container .sections li:nth-child(2) .well input:nth-child(1) ~ div:nth-of-type(4) .event-date:before {
+      content: "Beginning"; }
+  #shindig-signup .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked ~ div:nth-of-type(4), #shindig-signup-student .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked ~ div:nth-of-type(4) {
+    /*  Hide date separator and End Date */
+    /* Set Date Label to On */ }
+    #shindig-signup .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked ~ div:nth-of-type(4) > div:nth-of-type(1) > div input:nth-of-type(2),
+    #shindig-signup .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked ~ div:nth-of-type(4) > div:nth-of-type(1) > div span:nth-of-type(1), #shindig-signup-student .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked ~ div:nth-of-type(4) > div:nth-of-type(1) > div input:nth-of-type(2),
+    #shindig-signup-student .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked ~ div:nth-of-type(4) > div:nth-of-type(1) > div span:nth-of-type(1) {
+      visibility: hidden; }
+    #shindig-signup .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked ~ div:nth-of-type(4) .event-date:before, #shindig-signup-student .tab-container .sections li:nth-child(2) .well input:nth-child(1):checked ~ div:nth-of-type(4) .event-date:before {
+      content: "On"; }
+#shindig-signup .tab-container input:nth-child(1):checked ~ .sections li:nth-child(1),
+#shindig-signup .tab-container input:nth-child(2):checked ~ .sections li:nth-child(2),
+#shindig-signup .tab-container input:nth-child(3):checked ~ .sections li:nth-child(3),
+#shindig-signup .tab-container input:nth-child(4):checked ~ .sections li:nth-child(4), #shindig-signup-student .tab-container input:nth-child(1):checked ~ .sections li:nth-child(1),
+#shindig-signup-student .tab-container input:nth-child(2):checked ~ .sections li:nth-child(2),
+#shindig-signup-student .tab-container input:nth-child(3):checked ~ .sections li:nth-child(3),
+#shindig-signup-student .tab-container input:nth-child(4):checked ~ .sections li:nth-child(4) {
+  display: block; }
+#shindig-signup .tab-container .black-radial-gradient, #shindig-signup-student .tab-container .black-radial-gradient {
+  /* IE10 Consumer Preview */
+  /* Mozilla Firefox */
+  /* Opera */
+  /* Webkit (Safari/Chrome 10) */
+  /* Webkit (Chrome 11+) */
+  /* W3C Markup, IE10 Release Preview */
+  background-image: radial-gradient(circle farthest-corner at center, #FFFFFF 0%, #585859 50%, #272829 75%, #202121 87.5%, #000000 100%); }
+
+/*!
  * Responsive Tables
- */#shindig-signup .tab-container .sections tr.event-type.OH{background-color:#60C0C5}#shindig-signup .tab-container .sections tr.event-type.DS{background-color:#FC6}#shindig-signup .tab-container .sections tr.event-type.SH{background-color:#438FA8}#shindig-signup .tab-container .sections th{background:#DDD;color:#333;font-weight:700}#shindig-signup .tab-container .sections td,#shindig-signup .tab-container .sections th{padding:6px;border:1px solid #eee;text-align:left}#shindig-signup .tab-container .sections td .icon-calendar,#shindig-signup .tab-container .sections th .icon-calendar{float:right}@media only screen and (max-width:760px),(min-device-width:768px) and (max-device-width:1024px){#shindig-signup .tab-container .sections table,#shindig-signup .tab-container .sections tbody,#shindig-signup .tab-container .sections td,#shindig-signup .tab-container .sections th,#shindig-signup .tab-container .sections thead,#shindig-signup .tab-container .sections tr{display:block}#shindig-signup .tab-container .sections thead tr{position:absolute;top:-9999px;left:-9999px}#shindig-signup .tab-container .sections tr{border:1px solid #ccc}#shindig-signup .tab-container .sections td{border:none;border-bottom:1px solid #eee;position:relative;padding-left:50%}#shindig-signup .tab-container .sections td:before{position:absolute;top:6px;left:6px;width:45%;padding-right:10px;white-space:nowrap}}#shindig-signup .fltrow{height:20px;background-color:#f4f4f4}#shindig-signup .btnflt{font-size:11px;margin:0 2px;padding:0 1px;text-decoration:none;color:#fff;background-color:#666}#shindig-signup .flt{background-color:#f4f4f4;border:1px inset #ccc;margin:0;width:100%}#shindig-signup .flt_s{background-color:#f4f4f4;border:1px inset #ccc;margin:0;width:80%}#shindig-signup .inf{clear:both;width:auto;height:20px;background:#f4f4f4;font-size:11px;margin:0;padding:1px 3px;border:1px solid #ccc}#shindig-signup .ldiv{float:left;width:30%;position:inherit}#shindig-signup .mdiv{float:left;width:30%;position:inherit;text-align:center}#shindig-signup .rdiv{float:right;width:30%;position:inherit;text-align:right}#shindig-signup .loader{position:absolute;padding:15px 0;margin-top:7%;width:200px;left:40%;z-index:1000;font-size:14px;font-weight:700;border:1px solid #666;background:#f4f4f4;text-align:center;vertical-align:middle}#shindig-signup div.mdiv select{height:20px}#shindig-signup div.inf a{color:#C00}#shindig-signup div.inf a:hover{text-decoration:none}#shindig-signup .tot{font-weight:700}#shindig-signup .even{background-color:#fff}#shindig-signup .odd{background-color:#f4f4f4}.shindig-legend .legend-title{text-align:left;margin-bottom:5px;font-weight:700;font-size:90%}.shindig-legend .legend-scale ul{margin:0;margin-bottom:5px;padding:0;list-style:none}.shindig-legend .legend-scale ul li{font-size:80%;list-style:none;margin-left:0;line-height:18px;margin-bottom:2px}.shindig-legend ul.legend-labels li span{display:block;float:left;height:16px;width:30px;margin-right:5px;margin-left:0;border:1px solid #999}.shindig-legend .legend-source{font-size:70%;color:#999;clear:both}.shindig-legend a{color:#777}.shindig-legend li{display:inline-block!important}
+ */
+#shindig-signup .tab-container .sections, #shindig-signup-student .tab-container .sections {
+  /* Zebra striping
+  tr:nth-of-type(odd) {
+    background: #eee;
+  }*/
+  /* color coding */ }
+  #shindig-signup .tab-container .sections tr.event-type.OH, #shindig-signup-student .tab-container .sections tr.event-type.OH {
+    background-color: #60C0C5; }
+  #shindig-signup .tab-container .sections tr.event-type.DS, #shindig-signup-student .tab-container .sections tr.event-type.DS {
+    background-color: #FFCC66; }
+  #shindig-signup .tab-container .sections tr.event-type.SH, #shindig-signup-student .tab-container .sections tr.event-type.SH {
+    background-color: #438FA8; }
+  #shindig-signup .tab-container .sections th, #shindig-signup-student .tab-container .sections th {
+    background: #DDDDDD;
+    color: #333;
+    font-weight: bold; }
+  #shindig-signup .tab-container .sections td, #shindig-signup .tab-container .sections th, #shindig-signup-student .tab-container .sections td, #shindig-signup-student .tab-container .sections th {
+    padding: 6px;
+    border: 1px solid #eee;
+    text-align: left; }
+    #shindig-signup .tab-container .sections td .icon-calendar, #shindig-signup .tab-container .sections th .icon-calendar, #shindig-signup-student .tab-container .sections td .icon-calendar, #shindig-signup-student .tab-container .sections th .icon-calendar {
+      float: right; }
+
+/*
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  #shindig-signup .tab-container .sections, #shindig-signup-student .tab-container .sections {
+    /* Force table to not be like tables anymore */
+    /* Hide table headers (but not display: none;, for accessibility) */ }
+    #shindig-signup .tab-container .sections table, #shindig-signup .tab-container .sections thead, #shindig-signup .tab-container .sections tbody, #shindig-signup .tab-container .sections th, #shindig-signup .tab-container .sections td, #shindig-signup .tab-container .sections tr, #shindig-signup-student .tab-container .sections table, #shindig-signup-student .tab-container .sections thead, #shindig-signup-student .tab-container .sections tbody, #shindig-signup-student .tab-container .sections th, #shindig-signup-student .tab-container .sections td, #shindig-signup-student .tab-container .sections tr {
+      display: block; }
+    #shindig-signup .tab-container .sections thead tr, #shindig-signup-student .tab-container .sections thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px; }
+    #shindig-signup .tab-container .sections tr, #shindig-signup-student .tab-container .sections tr {
+      border: 1px solid #ccc; }
+    #shindig-signup .tab-container .sections td, #shindig-signup-student .tab-container .sections td {
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 50%; }
+    #shindig-signup .tab-container .sections td:before, #shindig-signup-student .tab-container .sections td:before {
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap; } }
+#shindig-signup, #shindig-signup-student {
+  /*====================================================
+      - HTML Table Filter Generator v1.6
+      elements and classes
+      - edit classes below to change filter grid style
+  =====================================================*/
+  /*paging drop-down list*/
+  /*link appearence in .inf div*/
+  /*link appearence in .inf div*/
+  /*rows counter*/
+  /*row bg alternating color*/
+  /*row bg alternating color*/ }
+  #shindig-signup .fltrow, #shindig-signup-student .fltrow {
+    /* filter grid row appearance */
+    height: 20px;
+    background-color: #f4f4f4; }
+  #shindig-signup .btnflt, #shindig-signup-student .btnflt {
+    /* button appearance */
+    font-size: 11px;
+    margin: 0 2px 0 2px;
+    padding: 0 1px 0 1px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #666; }
+  #shindig-signup .flt, #shindig-signup-student .flt {
+    /* filter (input) appearance */
+    background-color: #f4f4f4;
+    border: 1px inset #ccc;
+    margin: 0;
+    width: 100%; }
+  #shindig-signup .flt_s, #shindig-signup-student .flt_s {
+    /* small filter (input) appearance */
+    background-color: #f4f4f4;
+    border: 1px inset #ccc;
+    margin: 0;
+    width: 80%; }
+  #shindig-signup .inf, #shindig-signup-student .inf {
+    /* div containing left, middle and right divs */
+    clear: both;
+    width: auto;
+    height: 20px;
+    background: #f4f4f4;
+    font-size: 11px;
+    margin: 0;
+    padding: 1px 3px 1px 3px;
+    border: 1px solid #ccc; }
+  #shindig-signup .ldiv, #shindig-signup-student .ldiv {
+    /* left div */
+    float: left;
+    width: 30%;
+    position: inherit; }
+  #shindig-signup .mdiv, #shindig-signup-student .mdiv {
+    /* middle div */
+    float: left;
+    width: 30%;
+    position: inherit;
+    text-align: center; }
+  #shindig-signup .rdiv, #shindig-signup-student .rdiv {
+    /* right div */
+    float: right;
+    width: 30%;
+    position: inherit;
+    text-align: right; }
+  #shindig-signup .loader, #shindig-signup-student .loader {
+    /* loader appearance */
+    position: absolute;
+    padding: 15px 0 15px 0;
+    margin-top: 7%;
+    width: 200px;
+    left: 40%;
+    z-index: 1000;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #666;
+    background: #f4f4f4;
+    text-align: center;
+    vertical-align: middle; }
+  #shindig-signup div.mdiv select, #shindig-signup-student div.mdiv select {
+    height: 20px; }
+  #shindig-signup div.inf a, #shindig-signup-student div.inf a {
+    color: #CC0000; }
+  #shindig-signup div.inf a:hover, #shindig-signup-student div.inf a:hover {
+    text-decoration: none; }
+  #shindig-signup .tot, #shindig-signup-student .tot {
+    font-weight: bold; }
+  #shindig-signup .even, #shindig-signup-student .even {
+    background-color: #fff; }
+  #shindig-signup .odd, #shindig-signup-student .odd {
+    background-color: #f4f4f4; }
+
+.shindig-legend .legend-title {
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 90%; }
+.shindig-legend .legend-scale ul {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  list-style: none; }
+.shindig-legend .legend-scale ul li {
+  font-size: 80%;
+  list-style: none;
+  margin-left: 0;
+  line-height: 18px;
+  margin-bottom: 2px; }
+.shindig-legend ul.legend-labels li span {
+  display: block;
+  float: left;
+  height: 16px;
+  width: 30px;
+  margin-right: 5px;
+  margin-left: 0;
+  border: 1px solid #999; }
+.shindig-legend .legend-source {
+  font-size: 70%;
+  color: #999;
+  clear: both; }
+.shindig-legend a {
+  color: #777; }
+.shindig-legend li {
+  display: inline-block !important; }
+
+/*# sourceMappingURL=main.css.map */
